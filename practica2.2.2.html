@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- página html Strict -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>Práctica 2.2.2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="Página donde vamos a solucionar cuestiones que se han planteado sobre XHTML, ¿ Qué es Strict ?, ¿ Qué es transitional? ..."/>
+</head>
+<body>
+<h1> Práctica 2.2.2 </h1>
+<p><img src="http://learnhtmlwithsong.com/blog/wp-content/uploads/2012/12/html-cartoons-missing-doctype.png" alt="dinosaurio" ></img></p>
+<h2> ¿ XHTML tiene validez? </h2>
+<p>Claro que tiene validez, y no solo eso, sino que además presenta algunas "mejoras" respecto a HTML</p>
+	<ul>
+		<li> Es compatible con todos los navegadores principales ! </li>
+		<li> <strong> Busca Estandarizar y es más estricto que HTML</strong>, así minimiza la cantidad de HTML "Malo" que tienen las páginas web </li>
+		<li> Más liviano que HTML ( punto anterior ) </li>
+	</ul>
+	<p><a href="https://validator.w3.org"><img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/9358998/2000px-Valid_XHTML_1.0.svg.png?1483211073" alt="imagen xhtml10" width="60" height="20"></img></a> haz click en la imagen para ir al validador</p>
+	<h4>¿ Por qué es más estricto que HTML ?</h4>
+	<p> Vamos a ver algunas de las obligaciones que tiene XHTML respecto a HTML</p>
+	<h4> Elementos </h4>
+	<ul>
+		<li>Tienen que estar correctamente anidados</li>
+		<li> Se tienen que cerrar siempre !!! </li>
+		<li> su nombre debe estar siempre en minúscula</li>
+		<li> Siempre debe tener el elemento <strong>&lt;html&gt;</strong> </li>
+	</ul>
+	
+	<h4> Atributos </h4>
+	<ul>
+		<li>Su nombre siempre debe estar en minúscula</li>
+		<li>los valores de los atributos deben estar <strong>"</strong>citados<strong>"</strong></li>
+	</ul>
+<h2> ¿ Qué es Strict ? </h2>
+	<p>Contiene <b>todos</b> los elementos y atributos de HTML, pero NO INCLUYE elementos de presentación ni obsoletos. Los Frameset tampoco están permitidos </p>
+	<h3>Elementos presentación</h3>
+	<ul>
+		<li>&lt; i &gt; - Italic</li>
+		<li>&lt; b &gt; - negrita</li>
+		<li>&lt; u &gt; - subrayado</li>
+		<li>&lt; S &gt; - tachado</li>
+		<li>&lt; sup &gt; - superscript </li>
+		<li>&lt; sub &gt; - subscript ( Para mostrar subtextos, estilo N en base 2 )</li>
+	</ul>
+	
+	<h3>Tags obsoletos</h3>
+	<ul>
+		<li>&lt; applet &gt;</li>
+		<li>&lt; basefont &gt; - pone estilos de fuente</li>
+		<li>&lt; center &gt;</li>
+		<li>&lt; dir &gt;</li>
+		<li>&lt; font &gt;</li>
+		<li>&lt; isindex &gt;</li>
+		<li>&lt; menu &gt;</li>
+		<li>&lt; xmp &gt;</li>
+		<li>&lt; plaintext &gt;</li>
+		<li>&lt; embed &gt;</li>
+	</ul>
+	<p><a href="./practica2.2.2Obsoletos.html"> Haz click para ver la tabla con los tags y atributos obsoletos y qué tag los sustituye</a></p>
+	<h2> ¿ Qué es transational ? </h2>
+		<p>Es la más común, ya que mezcla <strong>Strict</strong> con los antiguos tags que conocemos de HTML ( que están ya en desuso por el consorcio que lo regula )</p>
+	<p>Es un doctype transitorio ( se supone que debería haber dado ya paso a STRICT ).</p> 
+	<p>Con el se da apoyo a navegadores antigüos que soportan mal las hojas de estilos  y disponemos de flexibilidad a la hora de escribir el código de nuestra página</p> 
+	<p>Sí, es más permisito pero <strong>A COSTA de no entrar de lleno en el estándar y de perder un poco de accesibilidad.</strong></p>
+	<h2> ¿ Qué utilizar, Strict o transational ? </h2>
+	<p>Tarde o temprano, los proyectos que tengamos se tendrán que migrar a <strong> XHTML 1.1 </strong> y la mejor forma de adaptar el código es utilizando STRICT.</p>
+</body>
+</html>
