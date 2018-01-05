@@ -1,0 +1,97 @@
+body{
+  background: url('../image/wallpaper.jpg') 0 0;
+  color: rgb(103, 94, 94);
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+}
+
+span.postIt{
+  position: absolute;
+  left: 0;
+  width: 800px;
+  height: 700px;
+  background:url('../image/postit.png') -10px 0;
+  zoom: 0.4;
+}
+
+span.mrmeeseeks{
+  position: absolute;
+  right:0;
+  width: 300px;
+  height: 280px;
+  background:url('../image/mrMeeseeks.png') 0 0;
+}
+
+table{
+  position: relative;
+  top: 20px;
+  width:900px;
+  margin: 0 auto;
+}
+
+thead{
+    background-color: rgb(252, 182, 63);
+    color: rgb(255, 225, 186);
+}
+
+thead > tr{
+  height: 80px;
+}
+
+td{
+    border: 2px solid orange;
+    height: 80px;
+    width: 100px;
+    background-color: rgb(255, 255, 241);
+}
+
+td p{
+  font-size: 10px;
+}
+
+td:hover{
+  cursor: pointer;
+}
+
+.hoverCeldas{
+  background-color: rgb(194, 219, 242);
+  color: rgb(1, 19, 46);
+}
+
+/* estilos asignaturas */
+
+.BBDD{
+  background-color: rgb(4, 88, 164);
+  color: rgb(144, 179, 232);
+}
+
+.LLMM{
+  background-color: rgb(19, 120, 7);
+  color: rgb(144, 232, 171);
+}
+
+.LLMM\+{
+  background-color: rgb(144, 232, 171);
+  color: rgb(19, 120, 7);
+}
+
+.PROG{
+  background-color: rgb(144, 1, 1);
+  color:rgb(223, 149, 149)
+}
+
+.PROG\+{
+  background-color:rgb(223, 149, 149);
+  color:rgb(144, 1, 1);
+}
+
+.ED{
+  background-color:rgb(177, 117, 0);
+  color:rgb(199, 172, 118);
+}
+
+.SI{
+  background-color:rgb(161, 0, 175);
+  color:rgb(198, 171, 200);
+}
