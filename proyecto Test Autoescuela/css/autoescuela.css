@@ -1,0 +1,27 @@
+body{
+  background-color:hsl(0, 0%, 0%);
+  font-family: Arial;
+  color: hsl(0, 0%, 100%);
+}
+
+
+article.preguntas{
+  width: 800px;
+  background-color: rgba(205, 200, 187, 0.69);
+  padding: 14px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.preguntas > img {
+
+}
+
+button.enviarFormulario{
+  width: 150px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+
+}

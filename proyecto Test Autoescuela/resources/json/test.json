@@ -1,0 +1,79 @@
+{
+	"1":{
+		"p":"¿ Qué alumbrado llevará encendido una motocicleta durante el día ?",
+		"a":"El de corto alcance o cruce",
+		"b":"El de posición o el de corto alcance",
+		"c":"Ninguno",
+		"s":"a",
+		"i":"todotest.com/tests/imgs/0002.jpg"
+	},
+	"2":{
+		"p":"¿ Puede realizar un cambio de sentido en un lugar donde está prohibido adelantar ?",
+		"a":"Sí, excepto entre la puesta y la salida de sol, porque disminuye la visibilidad.",
+		"b":"No, salvo que el cambio de sentido está expresamente autorizado.",
+		"c":"Sí, cuando la circulación en sentido contrario lo permita.",
+		"s":"b",
+		"i":"todotest.com/tests/imgs/0001.jpg"
+	},
+	"3":{
+		"p":" En una autopista conduciendo un camión de 3.000 Kg. de M.M.A., ¿qué distancia es obligatorio dejar con el vehículo que va delante?",
+		"a":"100 metros.",
+		"b":"50 metros.",
+		"c":"La distancia de seguridad.",
+		"s":"c"
+	},
+	"4":{
+		"p":"¿ Dónde está permitido que viaje un niño que no alcance los 135 centímetros de estatura?",
+		"a":"En cualquiera de los asientos traseros utilizando el cinturón para adultos.",
+		"b":"En un asiento delantero o trasero, utilizando siempre el cinturón de seguridad para adultos.",
+		"c":"En el asiento trasero, utilizando siempre un dispositivo de retención homologado en función de su talla y peso.",
+		"s":"c",
+		"i":"todotest.com/tests/imgs/0003.jpg"
+	},
+	"5":{
+		"p":"Con esta señalización, ¿ A qué velocidad debe circular ?",
+		"a":"El de corto alcance o cruce",
+		"b":"El de posición o el de corto alcance",
+		"c":"Ninguno",
+		"s":"a",
+		"i":"todotest.com/tests/imgs/0004.jpg"
+	},
+	"6":{
+		"p":"Una línea blanca continua sobre la calzada, sensiblemente más ancha que en el caso general...",
+		"a":"indica la existencia de un carril especial.",
+		"b":"sirve para delimitar, únicamente, los carriles bus.",
+		"c":"indica el borde de la calzada.",
+		"s":"a",
+		"i":"todotest.com/tests/imgs/0016.jpg"
+	},
+	"7":{
+		"p":"El seguro obligatorio, ¿ cubre los daños en la persona del conductor del vehículo asegurado?",
+		"a":"Sí, en todo caso.",
+		"b":"Sí, salvo cuando el conductor es el tomador del seguro.",
+		"c":"No",
+		"s":"C"
+	},
+	"8":{
+		"p":"La mayor parte de las víctimas mortales por accidente de circulación se producen en...",
+		"a":"vías interurbanas.",
+		"b":"vías urbanas.",
+		"c":"travesías.",
+		"s":"a",
+		"i":"todotest.com/tests/imgs/0006.jpg"
+	},
+	"9":{
+		"p":"¿Cuántos espejos retrovisores tienen que llevar instalados las motocicletas?",
+		"a":"Obligatoriamente uno en el lado derecho, pero pueden llevar dos.",
+		"b":"Siempre deben llevar dos espejos, uno en cada lado.",
+		"c":"Un espejo exterior izquierdo si no superan los 100 km/h y dos, uno en cada lado, si la velocidad es mayor.",
+		"s":"c"
+	},
+	"10":{
+		"p":"¿ Está permitida la circulación de animales por una carretera convencional?",
+		"a":"Sí, únicamente cuando no exista vía pecuaria.",
+		"b":"No.",
+		"c":"Sí, excepto cuando circulen en rebaño.",
+		"s":"a",
+		"i":"todotest.com/tests/imgs/0005.jpg"
+	}
+}
