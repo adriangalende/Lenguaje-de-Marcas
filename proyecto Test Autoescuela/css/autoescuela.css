@@ -18,7 +18,7 @@ body{
 
 
 article.preguntas{
-  width: 800px;
+  width:70%;
   background-color: rgb(119, 113, 113);
   padding: 14px;
   display: block;
@@ -26,10 +26,9 @@ article.preguntas{
 }
 
 
-.preguntas > img {
-  width: 220px;
-  display: block;
-  margin-top: 14px;
+#formularioTest > img {
+  width: 300px;
+  margin-top: 18px;
 }
 
 button.enviarFormulario{
@@ -37,5 +36,21 @@ button.enviarFormulario{
   height: 40px;
   display: block;
   margin: 0 auto;
+  border-radius: 4px;
+}
+
+
+.respuestaIncorrecta {
+  color: rgb(146, 4, 4);
+  background-color: rgb(219, 49, 49);
+  border-radius: 5px;
+}
+
+.respuestaCorrecta {
+  color: rgb(4, 146, 47);
+  background-color: rgb(49, 219, 100);
+  font-weight: bolder;
+  border-radius: 5px;
 
 }
+
