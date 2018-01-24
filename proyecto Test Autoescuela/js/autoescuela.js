@@ -19,12 +19,17 @@ $( document ).ready(function() {
       return listaPreguntas;
   }
 
+  /*envio formulario*/
+  $('.enviarFormulario').click(function(){
+    var data = $('form').serialize();
+    console.log(data);
+  });
+
   const NUMERO_PREGUNTAS = 3;
   /* subir json a la página para poder cargarlo  */
   $.getJSON('https://api.myjson.com/bins/1aonzx', function(data) {
       preguntas = preguntasRandom(NUMERO_PREGUNTAS);
-      main = $('.preguntas');
-      main.append("<form action=''>");
+      main = $('#formularioTest');
       $.each( preguntas, function( index, value ) {
         pregunta = data[value.toString()];
         main.append("<p><strong>[" + (index+1) + "] " + pregunta["p"]+"</strong></p>");
@@ -36,8 +41,6 @@ $( document ).ready(function() {
           main.append("<img src='http://www." + pregunta["i"] + "'></img>");
         }
       });
-      main.append("<form action=''><br>");
-      main.append("<button class='enviarFormulario'> Enviar </button>");
   }, 'text');
 
 });

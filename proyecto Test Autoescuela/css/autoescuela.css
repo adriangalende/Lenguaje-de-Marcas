@@ -1,13 +1,25 @@
 body{
-  background-color:hsl(0, 0%, 0%);
+  background-color:rgb(158, 148, 148);
   font-family: Arial;
   color: hsl(0, 0%, 100%);
+}
+
+.mensajeAdvertencia{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 40px;
+  text-align: center;
+  padding-top: 3%;
+  background-color: rgb(219, 103, 103);
+  color: rgb(163, 33, 33);
+  border-radius: 4px;
 }
 
 
 article.preguntas{
   width: 800px;
-  background-color: rgba(205, 200, 187, 0.69);
+  background-color: rgb(119, 113, 113);
   padding: 14px;
   display: block;
   margin: 0 auto;
@@ -15,7 +27,9 @@ article.preguntas{
 
 
 .preguntas > img {
-
+  width: 220px;
+  display: block;
+  margin-top: 14px;
 }
 
 button.enviarFormulario{
