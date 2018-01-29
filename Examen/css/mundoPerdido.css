@@ -1,0 +1,225 @@
+body{
+    background: url("../resources/images/bg.png");
+    font-family: Arial;
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+}
+
+header, footer{
+    width: 100%;
+    height: 75px;
+
+}
+
+strong:hover{
+    color: #586ead;
+    border-bottom: 3px dotted;
+    cursor: pointer;
+}
+
+header > nav > ul > li > a {
+    color: #586ead;
+}
+
+
+header > nav > ul > li > a:active, a:hover, .active{
+    color: #1d253a;
+}
+
+#cabecera{
+    float:left;
+    width: 50%;
+    text-align: center;
+}
+
+header > nav {
+    float: right;
+    position: relative;
+    right: 40px;
+    top: 10px;
+}
+
+header > nav > ul > li{
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #475a8d;
+}
+
+h1, h2 {
+    font-weight: bolder;
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+
+h3{
+    font-weight: lighter;
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+#banner{
+    width: 95%;
+    height: 320px;
+    background-image: url("../resources/images/img-banner.png");
+    margin: 0 auto;
+}
+
+#banner > #labelBanner {
+    background-color: rgba(0, 0, 0, 0.788);
+    color: #fff;
+    text-align: center;
+    width: 40%;
+    height: 90px;
+    float: left;
+    position: relative;
+    left: 120px;
+    top: 220px;
+}
+
+
+main {
+    width: 75%;
+    margin-left: 30px;
+}
+
+main > section {
+    padding: 30px;
+}
+
+main > section > article > img {
+    width: 100%;
+}
+
+aside {
+    float:right;
+    margin-right: 29px;
+    margin-top: 20px;
+    width: 20%;
+    min-height: 300px;
+    border-radius: 5px;
+    border: 2px solid rgb(150, 147, 147);
+}
+
+aside > section > h2 {
+    font-weight: 650;
+    margin-bottom: 7px;
+}
+
+#menuVertical > nav {
+    width: 94%;
+}
+
+#menuVertical > nav > ul {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#menuVertical > nav > ul > li {
+    list-style: none;
+    height: 25px;
+    margin-bottom: 5px;
+    background-color: rgb(199, 194, 194);
+    color: rgb(150, 147, 147);
+}
+
+#menuVertical > nav > ul > li > a {
+    color: rgb(150, 147, 147);
+    vertical-align: middle;
+    line-height: 25px; 
+    padding-left: 5px;
+}
+
+#menuVertical > nav > ul > li:hover {
+    background-color: #1d253a;
+}
+
+#menuVertical > nav > ul > li:hover > a{
+    color: #fff;
+}
+
+
+
+
+aside > section > h2 {
+    color:rgb(150, 147, 147);
+    text-align: center;
+}
+
+#equipo {
+    width: 94%;
+    margin-left: 3px;
+}
+
+aside > #equipo > article > a > img {
+    width: 45px;
+    float: left;
+}
+
+aside > #equipo > article{
+    background-color: rgb(199, 194, 194);
+    margin-bottom: 10px;
+    color: rgb(150, 147, 147);
+    vertical-align: middle;
+    line-height: 45px;  
+}
+
+#equipo > article > a{
+    text-decoration: none;
+    color: rgb(150, 147, 147);
+    margin-left: 10px;
+}
+
+#equipo > article:hover{
+  background-color: #1d253a;
+}
+
+#equipo > article > a:hover{
+    color: #fff;
+}
+
+#equipo > article:hover > a{
+    color: #fff;
+}
+
+#equipo > article > a:hover{
+    color: #fff;
+}
+
+#equipo > article:hover > a > img{
+    display:none;
+}
+
+
+
+footer {
+    background-color: #475a8d;
+    border-radius: 5px;
+    height: 50px;
+    text-align: center;
+}
+
+footer > nav > ul {
+    position: relative;
+    top: 15px;
+}
+
+footer > nav > ul > li, footer > nav > ul > li > a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #fff;
+}
+
+footer > nav > ul > li:hover {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+footer > nav > ul > li:hover > a {
+    color: #475a8d;
+}
+
