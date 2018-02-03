@@ -1,4 +1,4 @@
-{
+﻿{
 	"1":{
 		"p":"¿ Qué alumbrado llevará encendido una motocicleta durante el día ?",
 		"a":"El de corto alcance o cruce",
@@ -32,9 +32,9 @@
 	},
 	"5":{
 		"p":"Con esta señalización, ¿ A qué velocidad debe circular ?",
-		"a":"El de corto alcance o cruce",
-		"b":"El de posición o el de corto alcance",
-		"c":"Ninguno",
+		"a":"Obligatoriamente a 30 km/h.",
+		"b":"Al menos a 30 km/h.",
+		"c":"A 30 km/h, como recomendación, durante el tramo que subsista el peligro.",
 		"s":"a",
 		"i":"todotest.com/tests/imgs/0004.jpg"
 	},
@@ -75,5 +75,79 @@
 		"c":"Sí, excepto cuando circulen en rebaño.",
 		"s":"a",
 		"i":"todotest.com/tests/imgs/0005.jpg"
+	},
+	"11":{
+		"p":"El conductor debe...",
+		"a":"observar únicamente a los conductores que se aproximan por detrás.",
+		"b":"mirar siempre hacia adelante.",
+		"c":"observar constantemente lo que sucede en la vía.",
+		"s":"c"
+	},
+	"12":{
+		"p":"¿Cuál es la tasa de alcohol máxima permitida a un conductor novel?",
+		"a":"0,25 miligramos de alcohol por litro de aire espirado.",
+		"b":"0,3 miligramos de alcohol por litro de aire espirado.",
+		"c":"0,15 miligramos de alcohol por litro de aire espirado.",
+		"s":"c"
+	},
+	"13":{
+		"p":"Cuando un vehículo accidentado comienza a arder, ¿qué se debe hacer primero?",
+		"a":"Apagar el fuego.",
+		"b":"Sacar rápidamente a los heridos.",
+		"c":"Ir a buscar ayuda.",
+		"s":"b"
+	},
+	"14":{
+		"p":"En esta situación, ¿qué debe hacer si va a girar a la izquierda?",
+		"a":"Continuar, obedeciendo al semáforo de la derecha.",
+		"b":"Detenerse, obedeciendo al semáforo situado a la izquierda.",
+		"c":"Sólo detenerse si hay peatones cruzando.",
+		"s":"b",
+		"i":"todotest.com/tests/imgs/0033.jpg"
+	},
+	"15":{
+		"p":"¿Está permitido colocar los triángulos de preseñalización de peligro a menos de 50 metros del vehículo averiado?",
+		"a":"Sí, a esa distancia ya son visibles.",
+		"b":"No, deben estar al menos a 100 metros.",
+		"c":"No.",
+		"s":"c",
+		"i":"todotest.com/tests/imgs/0015.jpg"
+	},
+	"16":{
+		"p":"Para entrar en una autopista, ¿a qué velocidad debe circular?",
+		"a":"A la máxima velocidad permitida en la autopista.",
+		"b":"Siempre muy despacio para entrar con seguridad.",
+		"c":"A la velocidad adecuada que permita incorporarse con seguridad.",
+		"s":"c"
+	},
+	"17":{
+		"p":"¿Qué es una detención?",
+		"a":"La inmovilización del vehículo por necesidades de la circulación.",
+		"b":"Una parada por cualquier causa.",
+		"c":"Un estacionamiento sin bajarse del vehículo.",
+		"s":"a"
+	},
+	"18":{
+		"p":"Esta señal indica peligro por la proximidad de...",
+		"a":"una vía en mal estado.",
+		"b":"un badén en la vía.",
+		"c":"un resalto en la vía.",
+		"s":"b",
+		"i":"todotest.com/tests/imgs/p15b.jpg"
+	},
+	"19":{
+		"p":"La velocidad adecuada está siempre...",
+		"a":"por debajo de la velocidad mínima.",
+		"b":"por encima de la velocidad máxima y por debajo de la mínima.",
+		"c":"por encima de la velocidad mínima y por debajo de la máxima.",
+		"s":"c",
+		"i":"www.todotest.com/tests/imgs/0014.jpg"
+	},
+	"20":{
+		"p":"¿Tiene alguna obligación cuando su vehículo va a ser adelantado?",
+		"a":"Sí, señalizar con el intermitente derecho para indicar que puede realizar la maniobra con seguridad.",
+		"b":"No, la responsabilidad es del vehículo que adelanta.",
+		"c":"Sí, ceñirse al borde derecho de la calzada para facilitar la maniobra.",
+		"s":"c"
 	}
 }
