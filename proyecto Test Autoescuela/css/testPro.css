@@ -1,0 +1,66 @@
+
+main {
+ min-height: 240px;
+}
+
+#formularioTest {
+    height: auto;
+    min-height: 490px;
+}
+
+section {
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+    min-width: 100px;
+    max-width: 1058px;
+    width: 100%;
+}
+
+#countdown {
+    background-color: rgba(241, 236, 236, 0.541);
+    width: 150px;
+    height: 40px !important;
+    position: fixed;
+    left: 0;
+    top: 25%;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    font-size: 0.8em;
+}
+
+#countdown > i {
+    zoom:2;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#paginacionPreguntas{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}   
+
+button.botonPregunta{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button.incorrecto {
+    color: rgb(194, 5, 5);
+    background-color: rgb(219, 49, 49);
+    font-weight: bolder;
+}
+
+button.correcto {
+    color: rgb(4, 146, 47);
+    background-color: rgb(49, 219, 100);
+    font-weight: bolder;
+  }
