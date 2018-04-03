@@ -1,0 +1,1123 @@
+<?xml version="1.0"?>
+<carPool>
+    <car>
+        <maker>Volkswagen</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Golf</model>
+            <version>Edition 1.0 TSI 81kW 110CV</version>
+            <extra>TSI</extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>110</cv>
+        <consuptiom>
+            <city>10</city>
+            <highway>7</highway>
+        </consuptiom>
+        <co2Emission>148</co2Emission>
+        <doors>3</doors>
+        <price>23.000</price>
+    </car>
+    <car>
+        <maker>Volkswagen</maker>
+        <year>208</year>
+        <idModel>
+            <model>Golf</model>
+            <version>GTI 2.0 TSI 169kW 230CV DSG</version>
+            <extra>GTI</extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>230</cv>
+        <consuptiom>
+            <city>8.1</city>
+            <highway>5.3</highway>
+        </consuptiom>
+        <co2Emission>145</co2Emission>
+        <doors>3</doors>
+        <price>34.884</price>
+    </car>
+    <car>
+        <maker>Volkswagen</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Polo</model>
+            <version>Edition 1.0 48kW 65CV</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>5 velocidades</Gearbox>
+        <cv>65</cv>
+        <consuptiom>
+            <city>6.0</city>
+            <highway>4.1</highway>
+        </consuptiom>
+        <co2Emission>110</co2Emission>
+        <doors>5</doors>
+        <price>26.345</price>
+    </car>
+    <car>
+        <maker>Volkswagen</maker>
+        <year>2018</year>
+        <idModel>
+            <model>UP!</model>
+            <version>eup 1.0 60kW 82CV</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Eléctrico</combustible>
+        <transmission>Automático</transmission>
+        <Gearbox>1 velocidad</Gearbox>
+        <cv>82</cv>
+        <consuptiom>
+            <city>-</city>
+            <highway>-</highway>
+        </consuptiom>
+        <co2Emission>-</co2Emission>
+        <doors>5</doors>
+        <price>28.380</price>
+    </car>
+    <car>
+        <maker>Alfa Romeo</maker>
+        <year>2016</year>
+        <idModel>
+            <model>Giulietta</model>
+            <version>1.4 TB 88kW 120CV Giulietta</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidad</Gearbox>
+        <cv>120</cv>
+        <consuptiom>
+            <city>8.1</city>
+            <highway>5.1</highway>
+        </consuptiom>
+        <co2Emission>144</co2Emission>
+        <doors>5</doors>
+        <price>23.460</price>
+    </car>
+    <car>
+        <maker>BMW</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Serie 1</model>
+            <version>116d</version>
+            <extra>Common rail</extra>
+        </idModel>
+        <combustible>Diesel</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>116</cv>
+        <consuptiom>
+            <city>4.8</city>
+            <highway>3.9</highway>
+        </consuptiom>
+        <co2Emission>111</co2Emission>
+        <doors>3</doors>
+        <price>26.700</price>
+    </car>
+    <car>
+        <maker>AUDI</maker>
+        <year>2018</year>
+        <idModel>
+            <model>A1</model>
+            <version>Attraction 1.4 TFSI 110kW 150CV CoD</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>150</cv>
+        <consuptiom>
+            <city>5.9</city>
+            <highway>4.0</highway>
+        </consuptiom>
+        <co2Emission>109</co2Emission>
+        <doors>3</doors>
+        <price>22.265</price>
+    </car>
+    <car>
+        <maker>AUDI</maker>
+        <year>2018</year>
+        <idModel>
+            <model>A5</model>
+            <version>sport 2.0 TDI quattro S tronic Sportback</version>
+            <extra>Common rail</extra>
+        </idModel>
+        <combustible>Diesel</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>7 velocidades</Gearbox>
+        <cv>190</cv>
+        <consuptiom>
+            <city>5.3</city>
+            <highway>4.3</highway>
+        </consuptiom>
+        <co2Emission>121</co2Emission>
+        <doors>5</doors>
+        <price>53.666</price>
+    </car>
+    <car>
+        <maker>AUDI</maker>
+        <year>2018</year>
+        <idModel>
+            <model>A8</model>
+            <version>55 TFSI 250kW 340CV quattro tiptronic</version>
+            <extra>TFSI</extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>8 velocidades</Gearbox>
+        <cv>340</cv>
+        <consuptiom>
+            <city>10.5</city>
+            <highway>6.4</highway>
+        </consuptiom>
+        <co2Emission>180</co2Emission>
+        <doors>4</doors>
+        <price>104.528</price>
+    </car>
+    <car>
+        <maker>AUDI</maker>
+        <year>2018</year>
+        <idModel>
+            <model>A7</model>
+            <version>3.0 TDI ultra S tronic Sportback</version>
+            <extra>TDI</extra>
+        </idModel>
+        <combustible>Diesel</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>7 velocidades</Gearbox>
+        <cv>218</cv>
+        <consuptiom>
+            <city>5.1</city>
+            <highway>4.5</highway>
+        </consuptiom>
+        <co2Emission>122</co2Emission>
+        <doors>5</doors>
+        <price>65.392</price>
+    </car>
+    <car>
+        <maker>BMW</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Serie 4</model>
+            <version>435dA xDrive Gran Coupek</version>
+            <extra>Common rail</extra>
+        </idModel>
+        <combustible>Diesel</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>8 velocidades</Gearbox>
+        <cv>313</cv>
+        <consuptiom>
+            <city>7.5</city>
+            <highway>5.4</highway>
+        </consuptiom>
+        <co2Emission>163</co2Emission>
+        <doors>5</doors>
+        <price>67.400</price>
+    </car>
+    <car>
+        <maker>BMW</maker>
+        <year>2018</year>
+        <idModel>
+            <model>X1</model>
+            <version>xDrive25iA</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>8 velocidades</Gearbox>
+        <cv>231</cv>
+        <consuptiom>
+            <city>7.9</city>
+            <highway>5.4</highway>
+        </consuptiom>
+        <co2Emission>144</co2Emission>
+        <doors>5</doors>
+        <price>46.900</price>
+    </car>
+    <car>
+        <maker>Citroen</maker>
+        <year>2017</year>
+        <idModel>
+            <model>C4</model>
+            <version>C4 PureTech 81KW 110CV Tonic</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>5 velocidades</Gearbox>
+        <cv>110</cv>
+        <consuptiom>
+            <city>6.1</city>
+            <highway>4.0</highway>
+        </consuptiom>
+        <co2Emission>112</co2Emission>
+        <doors>5</doors>
+        <price>20.650</price>
+    </car>
+    <car>
+        <maker>Citroen</maker>
+        <year>2017</year>
+        <idModel>
+            <model>C4 Cactus</model>
+            <version>BlueHDi 73KW 100CV Shine</version>
+            <extra>Common rail</extra>
+        </idModel>
+        <combustible>Diesel</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>5 velocidades</Gearbox>
+        <cv>100</cv>
+        <consuptiom>
+            <city>4.2</city>
+            <highway>3.3</highway>
+        </consuptiom>
+        <co2Emission>95</co2Emission>
+        <doors>5</doors>
+        <price>21.400</price>
+    </car>
+    <car>
+        <maker>Ford</maker>
+        <year>2008</year>
+        <idModel>
+            <model>Mondeo</model>
+            <version>2.2 TDCi 175 Titanium S</version>
+            <extra>Common rail</extra>
+        </idModel>
+        <combustible>Diesel</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>175</cv>
+        <consuptiom>
+            <city>8.4</city>
+            <highway>4.9</highway>
+        </consuptiom>
+        <co2Emission>165</co2Emission>
+        <doors>4</doors>
+        <price>32.610</price>
+    </car>
+    <car>
+        <maker>Ford</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Mondeo</model>
+            <version>2.0 Hibrido 137kW 187CV Titanium HEV</version>
+            <extra>Eléctrico/Híbrido</extra>
+        </idModel>
+        <combustible>Híbrido</combustible>
+        <transmission>Automático</transmission>
+        <Gearbox>-</Gearbox>
+        <cv>187</cv>
+        <consuptiom>
+            <city>2.8</city>
+            <highway>5.0</highway>
+        </consuptiom>
+        <co2Emission>89</co2Emission>
+        <doors>4</doors>
+        <price>36.750</price>
+    </car>
+    <car>
+        <maker>Ford</maker>
+        <year>2014</year>
+        <idModel>
+            <model>Focus</model>
+            <version>1.6 GLP 117cv Titanium</version>
+            <extra></extra>
+        </idModel>
+        <combustible>GLP</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>5 velocidades</Gearbox>
+        <cv>117</cv>
+        <consuptiom>
+            <city>-</city>
+            <highway>-</highway>
+        </consuptiom>
+        <co2Emission>122</co2Emission>
+        <doors>5</doors>
+        <price>22.750</price>
+    </car>
+    <car>
+        <maker>Ford</maker>
+        <year>2017</year>
+        <idModel>
+            <model>Focus</model>
+            <version>1.5 Ecoboost SS 134kW 182CV STLi</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>182</cv>
+        <consuptiom>
+            <city>7.0</city>
+            <highway>4.6</highway>
+        </consuptiom>
+        <co2Emission>127</co2Emission>
+        <doors>5</doors>
+        <price>24.900</price>
+    </car>
+    <car>
+        <maker>Honda</maker>
+        <year>2017</year>
+        <idModel>
+            <model>Civic</model>
+            <version>1.5 IVTEC TURBO COMFORT</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>182</cv>
+        <consuptiom>
+            <city>7.4</city>
+            <highway>4.7</highway>
+        </consuptiom>
+        <co2Emission>130</co2Emission>
+        <doors>4</doors>
+        <price>25.450</price>
+    </car>
+    <car>
+        <maker>Hyundai</maker>
+        <year>2017</year>
+        <idModel>
+            <model>i40</model>
+            <version>1.6 GDi Essence</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>135</cv>
+        <consuptiom>
+            <city>8.3</city>
+            <highway>5.2</highway>
+        </consuptiom>
+        <co2Emission>147</co2Emission>
+        <doors>4</doors>
+        <price>23.865</price>
+    </car> 
+    <car>
+        <maker>Hyundai</maker>
+        <year>2018</year>
+        <idModel>
+            <model>IONIQ</model>
+            <version>1.6 GDI HEV Style DCT con trailer pack</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Híbrido</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>141</cv>
+        <consuptiom>
+            <city>3.9</city>
+            <highway>3.9</highway>
+        </consuptiom>
+        <co2Emission>92</co2Emission>
+        <doors>5</doors>
+        <price>30.325</price>
+    </car>
+    <car>
+        <maker>KIA</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Optima</model>
+            <version>2.0 TGDi GT Auto Pack Luxury</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>245</cv>
+        <consuptiom>
+            <city>11.8</city>
+            <highway>6.1</highway>
+        </consuptiom>
+        <co2Emission>191</co2Emission>
+        <doors>4</doors>
+        <price>43.480</price>
+    </car>
+    <car>
+        <maker>KIA</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Stinger</model>
+            <version>2.2 CRDi 147kW 200CV Style 4x2</version>
+            <extra>Common rail</extra>
+        </idModel>
+        <combustible>Diesel</combustible>
+        <transmission>Automático</transmission>
+        <Gearbox>8 velocidades</Gearbox>
+        <cv>200</cv>
+        <consuptiom>
+            <city>6.6</city>
+            <highway>4.9</highway>
+        </consuptiom>
+        <co2Emission>147</co2Emission>
+        <doors>5</doors>
+        <price>37.900</price>
+    </car>
+    <car>
+        <maker>Mazda</maker>
+        <year>2018</year>
+        <idModel>
+            <model>MX-5</model>
+            <version>1.5 96kW 131CV Origin</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>131</cv>
+        <consuptiom>
+            <city>8.1</city>
+            <highway>4.9</highway>
+        </consuptiom>
+        <co2Emission>139</co2Emission>
+        <doors>2</doors>
+        <price>25.000</price>
+    </car>
+    <car>
+        <maker>Mazda</maker>
+        <year>2018</year>
+        <idModel>
+            <model>CX-5</model>
+            <version>2.2 DE 110kW 150cv Origin 2WD</version>
+            <extra>Common rail</extra>
+        </idModel>
+        <combustible>Diesel</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>150</cv>
+        <consuptiom>
+            <city>5.9</city>
+            <highway>4.6</highway>
+        </consuptiom>
+        <co2Emission>132</co2Emission>
+        <doors>5</doors>
+        <price>28.850</price>
+    </car>
+    <car>
+        <maker>Mercedes-Benz</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Clase A</model>
+            <version>A 180</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>122</cv>
+        <consuptiom>
+            <city>7.5</city>
+            <highway>4.3</highway>
+        </consuptiom>
+        <co2Emission>127</co2Emission>
+        <doors>5</doors>
+        <price>26.525</price>
+    </car>
+    <car>
+        <maker>Mercedes-Benz</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Clase C</model>
+            <version>C 180</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>156</cv>
+        <consuptiom>
+            <city>6.4</city>
+            <highway>4.2</highway>
+        </consuptiom>
+        <co2Emission>116</co2Emission>
+        <doors>4</doors>
+        <price>36.450</price>
+    </car>
+    <car>
+        <maker>Mini</maker>
+        <year>2015</year>
+        <idModel>
+            <model>Paceman</model>
+            <version>COOPER PACEMAN</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>5 velocidades</Gearbox>
+        <cv>122</cv>
+        <consuptiom>
+            <city>7.3</city>
+            <highway>5.1</highway>
+        </consuptiom>
+        <co2Emission>137</co2Emission>
+        <doors>3</doors>
+        <price>24.300</price>
+    </car>
+    <car>
+        <maker>Mercedes-Benz</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Clase C</model>
+            <version>E 200 d</version>
+            <extra>Common rail</extra>
+        </idModel>
+        <combustible>Diesel</combustible>
+        <transmission>Automático</transmission>
+        <Gearbox>9 velocidades</Gearbox>
+        <cv>150</cv>
+        <consuptiom>
+            <city>4.3</city>
+            <highway>3.6</highway>
+        </consuptiom>
+        <co2Emission>102</co2Emission>
+        <doors>4</doors>
+        <price>49.200</price>
+    </car>
+    <car>
+        <maker>Mini</maker>
+        <year>2018</year>
+        <idModel>
+            <model>CLUBMAN</model>
+            <version>ONE</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>5 velocidades</Gearbox>
+        <cv>190</cv>
+        <consuptiom>
+            <city>10.3</city>
+            <highway>8.3</highway>
+        </consuptiom>
+        <co2Emission>238</co2Emission>
+        <doors>3</doors>
+        <price>39.700</price>
+    </car>
+    <car>
+        <maker>Mitsubushi</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Montero</model>
+            <version>3.2 DID Spirit Auto</version>
+            <extra>Common rail</extra>
+        </idModel>
+        <combustible>Diesel</combustible>
+        <transmission>Automático</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>102</cv>
+        <consuptiom>
+            <city>6.3</city>
+            <highway>4.4</highway>
+        </consuptiom>
+        <co2Emission>119</co2Emission>
+        <doors>5</doors>
+        <price>25.400</price>
+    </car>
+    <car>
+        <maker>Nissan</maker>
+        <year>2017</year>
+        <idModel>
+            <model>Qashqai</model>
+            <version>DIGT 85 kW 115 CV VISIA</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>115</cv>
+        <consuptiom>
+            <city>6.6</city>
+            <highway>5.1</highway>
+        </consuptiom>
+        <co2Emission>129</co2Emission>
+        <doors>5</doors>
+        <price>22.000</price>
+    </car>
+    <car>
+        <maker>Nissan</maker>
+        <year>2017</year>
+        <idModel>
+            <model>Micra</model>
+            <version>1.0G 52 kW 70 CV Visia</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>5 velocidades</Gearbox>
+        <cv>71</cv>
+        <consuptiom>
+            <city>5.9</city>
+            <highway>3.8</highway>
+        </consuptiom>
+        <co2Emission>103</co2Emission>
+        <doors>5</doors>
+        <price>13.550</price>
+    </car>
+    <car>
+        <maker>Nissan</maker>
+        <year>2018</year>
+        <idModel>
+            <model>GT-R</model>
+            <version>3.8G V6 419kW 570CV</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>570</cv>
+        <consuptiom>
+            <city>17.0</city>
+            <highway>8.8</highway>
+        </consuptiom>
+        <co2Emission>275</co2Emission>
+        <doors>2</doors>
+        <price>108.050</price>
+    </car>
+    <car>
+        <maker>Opel</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Astra</model>
+            <version>1.4 Turbo Elegance</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>140</cv>
+        <consuptiom>
+            <city>8.6</city>
+            <highway>5.8</highway>
+        </consuptiom>
+        <co2Emission>146</co2Emission>
+        <doors>4</doors>
+        <price>23.150</price>
+    </car> 
+    <car>
+        <maker>Opel</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Corsa</model>
+            <version>1.4 Expression 55kW 75CV</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>5 velocidades</Gearbox>
+        <cv>75</cv>
+        <consuptiom>
+            <city>6.8</city>
+            <highway>4.1</highway>
+        </consuptiom>
+        <co2Emission>120</co2Emission>
+        <doors>3</doors>
+        <price>13.910</price>
+    </car>
+    <car>
+        <maker>Peugeot</maker>
+        <year>2018</year>
+        <idModel>
+            <model>208</model>
+            <version>5P LIKE 1.2L PureTech 50KW 68CV</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>5 velocidades</Gearbox>
+        <cv>68</cv>
+        <consuptiom>
+            <city>5.7</city>
+            <highway>4.1</highway>
+        </consuptiom>
+        <co2Emission>108</co2Emission>
+        <doors>5</doors>
+        <price>13.910</price>
+    </car>
+    <car>
+        <maker>Renault</maker>
+        <year>2016</year>
+        <idModel>
+            <model>Clio</model>
+            <version>Life 1.2 16v 55kW 75CV</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>5 velocidades</Gearbox>
+        <cv>75</cv>
+        <consuptiom>
+            <city>7.2</city>
+            <highway>4.7</highway>
+        </consuptiom>
+        <co2Emission>127</co2Emission>
+        <doors>5</doors>
+        <price>13.150</price>
+    </car>
+    <car>
+        <maker>Renault</maker>
+        <year>2017</year>
+        <idModel>
+            <model>Megane</model>
+            <version>Life Energy TCe 74kW 100CV</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>100</cv>
+        <consuptiom>
+            <city>6.7</city>
+            <highway>4.6</highway>
+        </consuptiom>
+        <co2Emission>120</co2Emission>
+        <doors>5</doors>
+        <price>19.440</price>
+    </car>
+    <car>
+        <maker>Renault</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Kadjar</model>
+            <version>Life Energy TCe 97kW 130CV</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>130</cv>
+        <consuptiom>
+            <city>6.8</city>
+            <highway>4.9</highway>
+        </consuptiom>
+        <co2Emission>126</co2Emission>
+        <doors>5</doors>
+        <price>22.355</price>
+    </car>
+    <car>
+        <maker>Renault</maker>
+        <year>2017</year>
+        <idModel>
+            <model>Koleos</model>
+            <version>Intens dCi 96 kW 130CV</version>
+            <extra>Common rail</extra>
+        </idModel>
+        <combustible>Diesel</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>130</cv>
+        <consuptiom>
+            <city>5.1</city>
+            <highway>4.2</highway>
+        </consuptiom>
+        <co2Emission>120</co2Emission>
+        <doors>5</doors>
+        <price>30.520</price>
+    </car>
+    <car>
+        <maker>Seat</maker>
+        <year>2017</year>
+        <idModel>
+            <model>Ibiza</model>
+            <version>SC 1.0 EcoTSI 81kW FR Ultimate Edition</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>110</cv>
+        <consuptiom>
+            <city>5.2</city>
+            <highway>3.8</highway>
+        </consuptiom>
+        <co2Emission>99</co2Emission>
+        <doors>3</doors>
+        <price>18.750</price>
+    </car>
+    <car>
+        <maker>Seat</maker>
+        <year>2013</year>
+        <idModel>
+            <model>Altea</model>
+            <version>1.2 TSI Reference</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>105</cv>
+        <consuptiom>
+            <city>7.3</city>
+            <highway>5.1</highway>
+        </consuptiom>
+        <co2Emission>139</co2Emission>
+        <doors>5</doors>
+        <price>18.600</price>
+    </car>
+    <car>
+        <maker>Seat</maker>
+        <year>2017</year>
+        <idModel>
+            <model>Ateca</model>
+            <version>1.0 TSI 85kW 115CV StSp Reference Eco</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>115</cv>
+        <consuptiom>
+            <city>6.2</city>
+            <highway>4.6</highway>
+        </consuptiom>
+        <co2Emission>119</co2Emission>
+        <doors>5</doors>
+        <price>21.650</price>
+    </car>
+    <car>
+        <maker>Seat</maker>
+        <year>2018</year>
+        <idModel>
+            <model>León</model>
+            <version>ST 1.2 TSI 81kW 110CV StSp Reference</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>110</cv>
+        <consuptiom>
+            <city>6.1</city>
+            <highway>4.2</highway>
+        </consuptiom>
+        <co2Emission>114</co2Emission>
+        <doors>5</doors>
+        <price>20.280</price>
+    </car>
+    <car>
+        <maker>Skoda</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Fabia</model>
+            <version>1.0 TSI 70KW 95cv Active</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>5 velocidades</Gearbox>
+        <cv>95</cv>
+        <consuptiom>
+            <city>5.2</city>
+            <highway>3.9</highway>
+        </consuptiom>
+        <co2Emission>101</co2Emission>
+        <doors>5</doors>
+        <price>14.680</price>
+    </car>
+    <car>
+        <maker>Skoda</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Octavia</model>
+            <version>1.4 TSI 110KW 150CV Like</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>150</cv>
+        <consuptiom>
+            <city>6.7</city>
+            <highway>4.3</highway>
+        </consuptiom>
+        <co2Emission>121</co2Emission>
+        <doors>5</doors>
+        <price>23.910</price>
+    </car>
+    <car>
+        <maker>Suzuki</maker>
+        <year>2013</year>
+        <idModel>
+            <model>SX4</model>
+            <version>1.6 VVT GL</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>5 velocidades</Gearbox>
+        <cv>120</cv>
+        <consuptiom>
+            <city>6.8</city>
+            <highway>4.8</highway>
+        </consuptiom>
+        <co2Emission>127</co2Emission>
+        <doors>5</doors>
+        <price>18.658</price>
+    </car>
+    <car>
+        <maker>Suzuki</maker>
+        <year>2015</year>
+        <idModel>
+            <model>Vitara</model>
+            <version>1.4 TURBO S 4WD</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>140</cv>
+        <consuptiom>
+            <city>6.3</city>
+            <highway>5.0</highway>
+        </consuptiom>
+        <co2Emission>127</co2Emission>
+        <doors>5</doors>
+        <price>23.868</price>
+    </car>
+    <car>
+        <maker>Suzuki</maker>
+        <year>2017</year>
+        <idModel>
+            <model>Swift</model>
+            <version>1.0 GLE</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>5 velocidades</Gearbox>
+        <cv>111</cv>
+        <consuptiom>
+            <city>5.7</city>
+            <highway>4.0</highway>
+        </consuptiom>
+        <co2Emission>104</co2Emission>
+        <doors>5</doors>
+        <price>16.777</price>
+    </car>
+    <car>
+        <maker>Toyota</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Yaris</model>
+            <version>1.0 70 City</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>5 velocidades</Gearbox>
+        <cv>69</cv>
+        <consuptiom>
+            <city>5.2</city>
+            <highway>3.8</highway>
+        </consuptiom>
+        <co2Emission>99</co2Emission>
+        <doors>3</doors>
+        <price>14.850</price>
+    </car>
+    <car>
+        <maker>Toyota</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Prius</model>
+            <version>1.8 Prius hibrido</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Híbrido</combustible>
+        <transmission>Automático</transmission>
+        <Gearbox>0 velocidades</Gearbox>
+        <cv>122</cv>
+        <consuptiom>
+            <city>3.5</city>
+            <highway>3.7</highway>
+        </consuptiom>
+        <co2Emission>82</co2Emission>
+        <doors>5</doors>
+        <price>32.550</price>
+    </car>
+    <car>
+        <maker>Toyota</maker>
+        <year>2018</year>
+        <idModel>
+            <model>GT86</model>
+            <version>GT86</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>200</cv>
+        <consuptiom>
+            <city>10.4</city>
+            <highway>6.3</highway>
+        </consuptiom>
+        <co2Emission>180</co2Emission>
+        <doors>2</doors>
+        <price>34.490</price>
+    </car>
+    <car>
+        <maker>Volkswagen</maker>
+        <year>2013</year>
+        <idModel>
+            <model>Scirocco</model>
+            <version>1.4 TSI 122cv by RLine</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>122</cv>
+        <consuptiom>
+            <city>8.4</city>
+            <highway>5.3</highway>
+        </consuptiom>
+        <co2Emission>149</co2Emission>
+        <doors>3</doors>
+        <price>24.190</price>
+    </car>
+    <car>
+        <maker>Volkswagen</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Scirocco</model>
+            <version>Typhoon by RLine 2.0 TSI 132kW 180CV</version>
+            <extra></extra>
+        </idModel>
+        <combustible>Gasolina</combustible>
+        <transmission>Manual</transmission>
+        <Gearbox>6 velocidades</Gearbox>
+        <cv>180</cv>
+        <consuptiom>
+            <city>7.6</city>
+            <highway>5.3</highway>
+        </consuptiom>
+        <co2Emission>142</co2Emission>
+        <doors>3</doors>
+        <price>28.560</price>
+    </car>
+    <car>
+        <maker>Volkswagen</maker>
+        <year>2018</year>
+        <idModel>
+            <model>Touareg</model>
+            <version>3.0 TDI 193kW262CV BMT Tiptronic</version>
+            <extra>Common rail</extra>
+        </idModel>
+        <combustible>Diesel</combustible>
+        <transmission>Automático</transmission>
+        <Gearbox>8 velocidades</Gearbox>
+        <cv>262</cv>
+        <consuptiom>
+            <city>7.9</city>
+            <highway>6.2</highway>
+        </consuptiom>
+        <co2Emission>180</co2Emission>
+        <doors>5</doors>
+        <price>70.320</price>
+    </car>                                                                                                                                                                                                         
+</carPool>
