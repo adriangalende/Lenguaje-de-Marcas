@@ -93,7 +93,7 @@ $('document').ready(function() { //Sustituye a window.onload
         /* click en span wizardstep */
         $('.pasoWizard').on("click", function(){
             if (!($(this).attr('disabled'))){
-                if($(this).text() == 1){pintarFabricantes();}
+                if($(this).text() == 1){pintarFabricantes();} else {eval(diccionarioPasos[$(this).text()][1])}
                 mostrarPasoActual("paso"+$(this).text());
                 bloquearStepWizard($(this).text());
                 bloquearElementos(false);

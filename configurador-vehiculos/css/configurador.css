@@ -47,7 +47,7 @@ body {
 
 @media screen and (max-width: 1361px) and (min-width: 300px) {
     .contenedor-configurador {
-        width: 90% !important;
+        width: 95% !important;
     }
 }
 
@@ -227,7 +227,7 @@ input[type=checkbox] + label:hover{
 
 @media only screen and (max-width: 1546px) and (min-width: 1092px)  {
     .coche {
-        width: 52% !important;
+        width: 100% !important;
         display: inline-block !important;
         margin: 12px !important;
     }
@@ -235,14 +235,31 @@ input[type=checkbox] + label:hover{
 }
 
 
-@media only screen and (max-width: 1092px) and (min-width: 702px){
+@media only screen and (max-width: 1092px) and (min-width: 882px){
     .coche {
         width: 100% !important;
         display: block !important;
-        margin: 0 auto !important;
         margin-bottom: 12px!important;
     }
     
+}
+
+@media only screen and (max-width: 882px){
+    .coche {
+        width: 100% !important;
+        display: block !important;
+        margin: 0 auto!important;
+        margin-left: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 820px) and (min-width: 400px) {
+    .coche {
+        width: 100% !important;
+        display: block !important;
+        margin: 0 auto!important;
+        margin-left: 8px !important;
+    }
 }
 
 
@@ -401,7 +418,7 @@ input[type=checkbox] {
 
 /* PASOS SELECCION COCHE (nav) */
 
-@media screen and (max-width: 1362.5px) {
+@media screen and (max-width: 1400.5px) {
     nav ul, footer{
         display: none;
     }
