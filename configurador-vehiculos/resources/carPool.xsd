@@ -1,0 +1,40 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="carPool">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="car" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="maker"/>
+              <xs:element type="xs:short" name="year"/>
+              <xs:element name="idModel">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="model"/>
+                    <xs:element type="xs:string" name="version"/>
+                    <xs:element type="xs:string" name="extra"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="combustible"/>
+              <xs:element type="xs:string" name="transmission"/>
+              <xs:element type="xs:string" name="Gearbox"/>
+              <xs:element type="xs:short" name="cv"/>
+              <xs:element name="consuptiom">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:float" name="city"/>
+                    <xs:element type="xs:float" name="highway"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:short" name="co2Emission"/>
+              <xs:element type="xs:byte" name="doors"/>
+              <xs:element type="xs:float" name="price"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
