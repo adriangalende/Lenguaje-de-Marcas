@@ -1,0 +1,74 @@
+<?xml encoding="UTF-8" version="1.0"?>
+
+<!ELEMENT carPool (car)+>
+<!ATTLIST carPool
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT car (maker,year,idModel,combustible,transmission,Gearbox,cv,
+               consuptiom,co2Emission,doors,price)>
+<!ATTLIST car
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT maker (#PCDATA)>
+<!ATTLIST maker
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT year (#PCDATA)>
+<!ATTLIST year
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT idModel (model,version,extra)>
+<!ATTLIST idModel
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT combustible (#PCDATA)>
+<!ATTLIST combustible
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT transmission (#PCDATA)>
+<!ATTLIST transmission
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Gearbox (#PCDATA)>
+<!ATTLIST Gearbox
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT cv (#PCDATA)>
+<!ATTLIST cv
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT consuptiom (city,highway)>
+<!ATTLIST consuptiom
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT co2Emission (#PCDATA)>
+<!ATTLIST co2Emission
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT doors (#PCDATA)>
+<!ATTLIST doors
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT model (#PCDATA)>
+<!ATTLIST model
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT version (#PCDATA)>
+<!ATTLIST version
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT extra (#PCDATA)>
+<!ATTLIST extra
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT city (#PCDATA)>
+<!ATTLIST city
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT highway (#PCDATA)>
+<!ATTLIST highway
+  xmlns CDATA #FIXED ''>
