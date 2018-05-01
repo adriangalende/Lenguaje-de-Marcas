@@ -73,6 +73,7 @@ $('document').ready(function() { //Sustituye a window.onload
         /* Clicamos sobre cualquiera de los botones con la clase .siguientePaso */
 
         var diccionarioPasos = { // Como no quiero poner 1000 if, prefiero trabajar con un diccionario y hacer eval
+            1:["", "pintarFabricantes()"],
             2: ["generarCochesSeleccionados()", "pintarPasocombustible()"],
             3: ["generarCombustiblesSeleccionados()", "pintarNumeroPuertas()"],
             4: ["generarNumeroPuertasSeleccionadas()", "pintarRangoPrecios()"],
@@ -93,7 +94,7 @@ $('document').ready(function() { //Sustituye a window.onload
         /* click en span wizardstep */
         $('.pasoWizard').on("click", function(){
             if (!($(this).attr('disabled'))){
-                if($(this).text() == 1){pintarFabricantes();} else {eval(diccionarioPasos[$(this).text()][1])}
+                eval(diccionarioPasos[$(this).text()][1]);
                 mostrarPasoActual("paso"+$(this).text());
                 bloquearStepWizard($(this).text());
                 bloquearElementos(false);
@@ -277,7 +278,6 @@ $('document').ready(function() { //Sustituye a window.onload
         function pintarFabricantes() {
             var marcas = obtenerMarcas($(coches));
             if(!fabricantesPintados) {
-                console.log("pintamos")
                 var form = $('form');
     
                 // Paso1 : elegir marcas

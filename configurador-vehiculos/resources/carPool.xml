@@ -73,10 +73,10 @@
         <Gearbox>1 velocidad</Gearbox>
         <cv>82</cv>
         <consuptiom>
-            <city>-</city>
-            <highway>-</highway>
+            <city>0</city>
+            <highway>0</highway>
         </consuptiom>
-        <co2Emission>-</co2Emission>
+        <co2Emission>0</co2Emission>
         <doors>5</doors>
         <price>28.380</price>
     </car>
@@ -310,7 +310,7 @@
         </idModel>
         <combustible>Híbrido</combustible>
         <transmission>Automático</transmission>
-        <Gearbox>-</Gearbox>
+        <Gearbox>0</Gearbox>
         <cv>187</cv>
         <consuptiom>
             <city>2.8</city>
@@ -333,8 +333,8 @@
         <Gearbox>5 velocidades</Gearbox>
         <cv>117</cv>
         <consuptiom>
-            <city>-</city>
-            <highway>-</highway>
+            <city>0</city>
+            <highway>0</highway>
         </consuptiom>
         <co2Emission>122</co2Emission>
         <doors>5</doors>
