@@ -70,5 +70,36 @@
     "Destacada":false,
     "Categoria":"Fútbol"
   },
-
+  {
+    "idNoticia": 8,
+    "Fecha": "22/05/2018",
+    "Titulo":"\"Griezmann: 1 de julio\"",
+    "Entradilla":"Bartomeu asegura quye hasta el 1 de julio no moverán ficha por Griezmann por respeto al Atlético de Madrid",
+    "Texto":"El primer tema que abordó el presidente del FC Barcelona en la entrevista que le realizó Mònica Terribas en Catalunya Ràdio fue el posible fichaje de Antoine Griezmann. Josep Maria Bartomeu no quiso pronunciarse acerca de esta incorporación \"por respeto al Atlético de Madrid. Griezmann tiene contrato en vigor y por eso no debo pronunciarme\". Añadió que \"ahora mismo la temporada todavía no ha terminado, hay que seguir luchando por títulos y hasta el 1 de julio no podemos hablar\".";
+    "Usuario":"EFE",
+    "Destacada":false,
+    "Categoria":"Fútbol"
+  },
+  {
+    "idNoticia": 9,
+    "Fecha": "23/05/2018",
+    "Titulo":"Viviani consigue su póquer en la previa de Prato Nevoso",
+    "Entradilla":"El sprinter italiano ganó en Iseo su cuarta etapa en el Giro de Italia. Triunfo muy importante para afianzar la maglia ciclamino. No hubo cambios en la general.",
+    "Texto":"Mientras Elia Vivani cuenta con el tren más experimentado y fiable a la hora de preparar los sprints, Sam Bennett debe buscarse la vida y Danny van Poppel se precipita en cada llegada. Así que el italiano logró su cuarto triunfo en el Giro 101 (quinto en total) en Iseo, después de aprovechar un lanzamiento perfecto de Stybar y Sabatini. A Bennett le pilló muy mal colocado y aun así acabó segundo. Viviani prácticamente cerró la clasificación de la maglia ciclamino. De 16 etapas van seis volatas: en las otras dos se impuso Bennett.\nLa fuga, esta vez peleada desde el inicio, con ataques, contrataques y diferentes alternativas, no fraguó hasta que Luis León Sánchez, el más insistente, se llevó consigo a Hermans, Poels y De Marchi. El murciano y el italiano sucumbieron a once kilómetros de la meta. En el curveo de la parte final se produjeron varias intentonas, de Stybar, Benedetti, Gesink, Brambilla, Henao y Lammertink, de nuevo sin éxito. Los favoritos entraron protegidos de la lluvia en vísperas de las tres jornadas alpinas que definirán la general: Prato Nevoso, Bardonecchia y Cervinia. Simon Yates tiene a tiro su primera grande.",
+    "Usuario":"J.A.Ezquerro",
+    "Destacada":false,
+    "Categoria":"Ciclismo",
+    "Tags":["Giro Italia 2018"]
+  },
+  {
+    "idNoticia": 10,
+    "Fecha": "23/05/2018",
+    "Titulo":"Tremendo accidente de Rabat: por los aires y su moto, en llamas",
+    "Entradilla":"El catalán no perdió el conocimiento y fue trasladado al Hospital Quirón Dexeus. Pese a la aparatosidad no tiene fracturas y una resonancia determinará si hay daño en los ligamentos.",
+    "Texto":"La noticia de la mañana en los entrenamientos de Montmeló fue la escalofriante caída de Tito Rabat que dejó una impactante imagen a los que la presenciaron. La Ducati en llamas y el bravo piloto catalán retorciéndose de dolor. Rabat fue atendido en el Circuit y trasladado a una clínica como anunció su equipo, Reale Avintia Racing, en redes sociales: \"Tito Rabat ha sufrido una caída durante el test de Michelin en el Circuit de Barcelona-Catalunya. Está consciente en el hospital del circuito y será trasladado al Hospital Quirón Dexeus con posible lesión en el brazo izquierdo\". Afortunadamente pese a la aparatosidad del accidente en las primeras exploraciones no han encontrado fracturas y le están realizando una resonancia magnética para evaluar si hay daños en los ligamentos. ",
+    "Usuario":"Rafa Payá Blog",
+    "Destacada":false,
+    "Categoria":"Motociclismo",
+    "Tags":["MOTOGP","Montmeló"]
+  }
 ]}
