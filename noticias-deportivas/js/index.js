@@ -63,13 +63,15 @@ $( document ).ready(function() {
 
     //Funcion que comprueba si la imagen de la noticia esta en la carpeta que toca, si no pone una imagen por defecto
     function obtenerImagen(idNoticia) {
-        var img = new Image();
-        img.crossOrigin=null;
-        img.src = "img/noticias/"+$.md5(idNoticia)+".jpg";
-        if(!img.complete){
-            img.src = "img/noticias/default.jpg";
-        }
-        return img.src
+        String src="img/noticias/"+$.md5(idNoticia)+".jpg"
+        $.get(src)
+            .done(function() {
+                // exists code
+            }).fail(function() {
+            src= "img/noticias/default.jpg";
+        })
+
+        return src
     }
 
 
