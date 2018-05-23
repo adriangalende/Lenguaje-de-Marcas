@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+    //endpoint imagenes
+    ENDPOINTIMAGES="https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/img/noticias/";
     //Indice noticias destacadas
     NOTICIAS_POR_PAGINA = 4;
     //Indicador de cual es la proxima noticia a mostrar
@@ -8,9 +10,9 @@ $( document ).ready(function() {
 
     //obteniendo noticias destacadas
     $.getJSON( "https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/resources/destacadas.json", function( data ) {
+        var i=0;
         $.each(data["destacadas"], function( key, noticia){
             contadorDestacadas=0;
-            contadorNoticias=0;
             $(".carousel-inner").append(pintarNoticiaDestacada(noticia, i));
             $(".carousel-indicators").append("<li data-target='#carouselDestacadas' data-slide-to=''"+i+"'></li>")
             contadorDestacadas++;
@@ -23,21 +25,17 @@ $( document ).ready(function() {
 
     //Obteniendo noticias normales
     $.getJSON( "https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/resources/noticias.json", function( data ) {
-        //el array de objetos empieza por indice 0
-        contadorNoticias = (Object.keys(data["noticias"]).length)-1;
+        contadorNoticias = (Object.keys(data["noticias"]).length);
+        console.log(contadorNoticias)
         //asignamos a la variable global noticias los objetos json
         noticias=data;
-        i=1
+        var i=1
         proximaNoticia=contadorNoticias;
         while( i < contadorNoticias && i <= NOTICIAS_POR_PAGINA ){
             $(".row").append(pintarNoticia(data["noticias"][proximaNoticia]));
             i++;
             proximaNoticia--;
         }
-
-        console.log(proximaNoticia)
-        $("#carouselDestacadas").before()
-
     });
 
     function pintarNoticiaDestacada(noticia, i){
@@ -98,14 +96,21 @@ $( document ).ready(function() {
 
     //Funcion que comprueba si la imagen de la noticia esta en la carpeta que toca, si no pone una imagen por defecto
     function obtenerImagen(idNoticia) {
-        src="img/noticias/"+$.md5(idNoticia)+".jpg"
-        $.get(src)
-            .done(function() {
-                // exists code
-            }).fail(function() {
-                src= "img/noticias/default.jpg";
-        })
-        return src
+        var src=""
+        $.ajax({
+            url: ENDPOINTIMAGES+$.md5(idNoticia)+".jpg",
+            type: 'GET',
+            success: function(data) {
+                src = ENDPOINTIMAGES+$.md5(idNoticia)+".jpg";
+            },
+            error: function(data) {
+                    src= ENDPOINTIMAGES+"default.jpg";
+
+            },
+            complete: function(data){
+                return src;
+            }
+        });
     }
 
 
