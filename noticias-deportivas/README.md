@@ -24,15 +24,15 @@ Es decir, tenemos que realizar una página principal donde vayan saliendo notici
 > - [ ] pendiente 
 > - [x] hecho 
 
-- [ ] Fichero JSON con noticias
-- [ ] Leer Fichjero JSON y Obtener noticias
+- [x] Fichero JSON con noticias
+- [x] Leer Fichjero JSON y Obtener noticias
 - [ ] Estructura de la página
-    - [ ] Diseño en papel
+    - [x] Diseño en papel
     - [ ] Bootstrap 
-- [ ] Pintar noticias en la página
-- [ ] Sistema recarga con scroll
-    - [ ] Mostrar N noticias
-    - [ ] Mostrar siguientes noticias bajando scroll
+- [x] Pintar noticias en la página
+- [x] Sistema recarga con scroll
+    - [x] Mostrar N noticias
+    - [x] Mostrar siguientes noticias bajando scroll
 
 > Una vez finalizados los objetivos básicos vamos a intentar ir un poco más allá
 

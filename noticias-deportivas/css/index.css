@@ -61,3 +61,23 @@ h3 span.badge-pill {
     transition: all .2s ease-in-out;
 
 }
+
+/* Cargando... */
+
+#loading {
+    display:none;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color:red;
+    margin-top: 20px;
+    height: 400px;
+}

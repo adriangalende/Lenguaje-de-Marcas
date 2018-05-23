@@ -2,7 +2,7 @@ $( document ).ready(function() {
     //endpoint imagenes
     ENDPOINTIMAGES="https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/img/noticias/";
     //Indice noticias destacadas
-    NOTICIAS_POR_PAGINA = 4;
+    NOTICIAS_POR_PAGINA = 3;
     //Indicador de cual es la proxima noticia a mostrar
     proximaNoticia=0;
     //Contiene las noticias cargadas
@@ -26,11 +26,10 @@ $( document ).ready(function() {
     //Obteniendo noticias normales
     $.getJSON( "https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/resources/noticias.json", function( data ) {
         contadorNoticias = (Object.keys(data["noticias"]).length);
-        console.log(contadorNoticias)
         //asignamos a la variable global noticias los objetos json
         noticias=data;
         var i=1
-        proximaNoticia=contadorNoticias;
+        proximaNoticia=contadorNoticias-1;
         while( i < contadorNoticias && i <= NOTICIAS_POR_PAGINA ){
             $(".row").append(pintarNoticia(data["noticias"][proximaNoticia]));
             i++;
@@ -75,16 +74,24 @@ $( document ).ready(function() {
         var posicionScroll = $(window).scrollTop();
         var alturavVentana = $(window).height();
         //al llegar al 80% de la altura de nuestra ventana
-        if(posicionScroll > alturavVentana*0.78){
-            var i=proximaNoticia;
-            while (i>=proximaNoticia && proximaNoticia > 0){
-                $(".row").append(pintarNoticia(noticias["noticias"][i]));
-                proximaNoticia--;
-            }
 
+        //$(window).scrollTop() + $(window).height() == $(document).height()
+        if(posicionScroll + alturavVentana == $(document).height() && proximaNoticia >=0 ) {
+            $('#loading').fadeIn();
+            var i=proximaNoticia;
+            var noticiaPintada=0;
+            setTimeout(function(){
+                while ( proximaNoticia >= 0 && noticiaPintada < NOTICIAS_POR_PAGINA){
+                    $(".row").append(pintarNoticia(noticias["noticias"][i]));
+                    proximaNoticia--;
+                    i=proximaNoticia;
+                    noticiaPintada++;
+                }
+            }, 1000);
+
+            $('#loading').fadeOut();
         }
     });
-
 
     function pintarTags(tags){
         tagsHTML = ""
