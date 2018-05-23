@@ -49,4 +49,15 @@
     "Usuario":"Hossam Usama",
     "Destacada":false,
     "Categoria":"Fútbol"
-  }]}
+  },
+  {
+    "idNoticia": 6,
+    "Fecha": "23/05/2018",
+    "Titulo":"Una Champions sin la bbC",
+    "Entradilla":"SEl tridente no ha coincidido en la máxima competición continental en toda la temporada y solo han jugado juntos 416 minutos en Liga.",
+    "Texto":"Zinedine Zidane defiende a su tridente a capa y espada. \"Los tres de la bbC son los mejores con diferencia\", dijo su entrenador en el día abierto a la prensa con motivo de la final de Kiev. Pero la realidad refleja algo diferente. Y si la Champions League es el terreno donde el Real Madrid muestra su máxima expresión, entonces la bbC, como unidad en sí misma, puede considerarse sentenciada. Benzema, Bale y Cristiano Ronaldo no han coincidido sobre el césped en todo el desarrollo de la máxima competición continental esta temporada. Europa no ve junto al tridente blanco desde la ida de cuartos de final de la pasada campaña contra el Bayern en el Allianz Arena.\n Desde aquel partido en Múnich, el 12 de abril de 2017, los tres no volvieron a coincidir sobre el campo hasta el 21 de enero en el primer partido de la segunda vuelta contra el Deportivo, ya fuera por la sanción con la que Cristiano Ronaldo inició el campeonato o las lesiones del francés y el galés. Con todos a disposición, luego entraron en juego las decisiones de Zidane. En los últimos cuatro meses de competición, el entrenador del Real Madrid sólo ha concedido al tridente 416 minutos juntos repartidos en nueve encuentros, todos ellos de Liga, destacando su brillante actuación conjunta en el Clásico del Camp Nou.\nEn Champions las cosas han sido distintas. Cristiano Ronaldo ha sido en todo momento indiscutible. Por supuesto. Pero sus dos escuderos en el tridente han atravesado momentos duros en Europa, incluyendo su suplencia compartida en el partido de ida de semifinales frente al Bayern en Múnich. Benzema ni pisó el césped del Bernabéu en el partido de vuelta de cuartos contra la Juventus y también fue suplente en Múnich. Aunque luego se resarció con dos goles vitales en el desenlace de la semifinal contra los bávaros.\nPeor le han ido las cosas a Gareth Bale, que solo ha disputado 99 minutos en los cruces. Suplente en los dos choques contra el PSG, en el banquillo de Turín, donde no jugó nada, se le vio apático mientras el resto de suplentes celebraban los goles de sus compañeros. Sí disfrutó de la titularidad en la vuelta, pero salió desenchufado y Zidane decidió sustituirle tras ante su actitud pasiva mientras Cristiano Ronaldo le reclamaba más agresividad. El galés parece la pieza más frágil de la bbC, aunque en la recta final de Liga ha opositado con goles para ganarse un sitio en Kiev. Su futuro ocupará muchas líneas en verano...",
+    "Usuario":"Hossam Usama",
+    "Destacada":false,
+    "Categoria":"Fútbol"
+  }
+]}

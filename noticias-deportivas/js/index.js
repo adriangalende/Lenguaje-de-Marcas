@@ -6,12 +6,11 @@ $( document ).ready(function() {
         $.each(data["destacadas"], function( key, noticia){
             contadorDestacadas=0;
             contadorNoticias=0;
-            if(noticia.Destacada){
-                $(".carousel-inner").append(pintarNoticiaDestacada(noticia, i));
-                $(".carousel-indicators").append("<li data-target='#carouselDestacadas' data-slide-to=''"+i+"'></li>")
-                contadorDestacadas++;
-                i++;
-            }
+            $(".carousel-inner").append(pintarNoticiaDestacada(noticia, i));
+            $(".carousel-indicators").append("<li data-target='#carouselDestacadas' data-slide-to=''"+i+"'></li>")
+            contadorDestacadas++;
+            i++;
+
         });
         $("#carouselDestacadas").before()
 
@@ -87,9 +86,7 @@ $( document ).ready(function() {
                 // exists code
             }).fail(function() {
                 src= "img/noticias/default.jpg";
-                console.log("la imagen "+ $.md5(idNoticia)+".jpg no se ha encontrado, tendria que poner default")
         })
-
         return src
     }
 
