@@ -63,7 +63,7 @@ $( document ).ready(function() {
 
     //Funcion que comprueba si la imagen de la noticia esta en la carpeta que toca, si no pone una imagen por defecto
     function obtenerImagen(idNoticia) {
-        String src="img/noticias/"+$.md5(idNoticia)+".jpg"
+        src="img/noticias/"+$.md5(idNoticia)+".jpg"
         $.get(src)
             .done(function() {
                 // exists code
