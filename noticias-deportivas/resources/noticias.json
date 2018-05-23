@@ -59,5 +59,16 @@
     "Usuario":"Hossam Usama",
     "Destacada":false,
     "Categoria":"Fútbol"
-  }
+  },
+  {
+    "idNoticia": 7,
+    "Fecha": "23/05/2018",
+    "Titulo":"Casemiro: \"No puedo fichar por el Barça, no tengo el ADN Barça como dice Xavi\"",
+    "Entradilla":"El madridista respondió al exbarcelonista",
+    "Texto":"Carlos Henrique Casemiro habló en El Larguero antes de la final del sábado en Kiev ante el Liverpool y respondió a unas palabras de Xavi Hernández en las que hablaba del tipo de fútbol y el ADN de los jugadores del Barça.En concreto, las palabras de Xavi Hernández en El País sobre el centrocampista brasileño del Real Madrid fueron las siguientes: \"En el Barça entendemos el fútbol como espacio-tiempo. ¿Quién lo domina? Busquets, Messi, Iniesta: son maestros del espacio-tiempo. Siempre saben qué hacer, si están solos o rodeados. Esto, hay centrocampistas como Casemiro que no lo entienden. Pero, a su vez, Busquets no podría hacer nunca las coberturas que hace Casemiro cuando se la juega a cara o cruz. El Madrid se parte, se van siete al ataque y Casemiro se queda solo en el medio a cubrir. Esto es cara o cruz. Esto Busquets no lo puede hacer porque hasta yo soy más rápido que él. Casemiro es rapidísimo. Pero le cuesta todo lo demás porque no lo ha trabajado: tiene otras características, es más defensivo, roba más balones, llega, abarca más campo. Pero no domina el espacio-tiempo. Si a Casemiro lo estimulas con 12, 13, 15 años, esto lo tendría\", aseguró en su momento.";
+    "Usuario":"Hossam Usama",
+    "Destacada":false,
+    "Categoria":"Fútbol"
+  },
+
 ]}

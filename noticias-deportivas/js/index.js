@@ -1,6 +1,11 @@
 $( document ).ready(function() {
     //Indice noticias destacadas
-    i = 0;
+    NOTICIAS_POR_PAGINA = 4;
+    //Indicador de cual es la proxima noticia a mostrar
+    proximaNoticia=0;
+    //Contiene las noticias cargadas
+    noticias;
+
     //obteniendo noticias destacadas
     $.getJSON( "https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/resources/destacadas.json", function( data ) {
         $.each(data["destacadas"], function( key, noticia){
@@ -18,20 +23,19 @@ $( document ).ready(function() {
 
     //Obteniendo noticias normales
     $.getJSON( "https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/resources/noticias.json", function( data ) {
-        $.each(data["noticias"], function( key, noticia){
-            contadorDestacadas=0;
-            contadorNoticias=0;
+        //el array de objetos empieza por indice 0
+        contadorNoticias = (Object.keys(data["noticias"]).length)-1;
+        //asignamos a la variable global noticias los objetos json
+        noticias=data;
+        i=1
+        proximaNoticia=contadorNoticias;
+        while( i < contadorNoticias && i <= NOTICIAS_POR_PAGINA ){
+            $(".row").append(pintarNoticia(data["noticias"][proximaNoticia]));
+            i++;
+            proximaNoticia--;
+        }
 
-            $(".row").append(pintarNoticia(noticia));
-            // if(noticia.Destacada){
-            //     $(".carousel-inner").append(pintarNoticiaDestacada(noticia, i));
-            //     $(".carousel-indicators").append("<li data-target='#carouselDestacadas' data-slide-to=''"+i+"'></li>")
-            //     contadorDestacadas++;
-            //     i++;
-            // } else {
-            //     $(".row").append(pintarNoticia(noticia));
-            // }
-        });
+        console.log(proximaNoticia)
         $("#carouselDestacadas").before()
 
     });
@@ -68,6 +72,20 @@ $( document ).ready(function() {
         return stringNoticia;
     }
 
+    //funcion controlar scroll para cargar noticias
+    $(window).scroll(function (e) {
+        var posicionScroll = $(window).scrollTop();
+        var alturavVentana = $(window).height();
+        //al llegar al 80% de la altura de nuestra ventana
+        if(posicionScroll > alturavVentana*0.78){
+            var i=proximaNoticia;
+            while (i>=proximaNoticia && proximaNoticia > 0){
+                $(".row").append(pintarNoticia(noticias["noticias"][i]));
+                proximaNoticia--;
+            }
+
+        }
+    });
 
 
     function pintarTags(tags){
