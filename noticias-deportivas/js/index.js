@@ -2,7 +2,7 @@ $( document ).ready(function() {
     //Indice noticias destacadas
     i = 0;
     //obteniendo noticias destacadas
-    $.getJSON( "https://api.myjson.com/bins/11q3cy", function( data ) {
+    $.getJSON( "https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/resources/destacadas.json", function( data ) {
         $.each(data["destacadas"], function( key, noticia){
             contadorDestacadas=0;
             contadorNoticias=0;
@@ -18,7 +18,7 @@ $( document ).ready(function() {
     });
 
     //Obteniendo noticias normales
-    $.getJSON( "https://api.myjson.com/bins/11q3cy", function( data ) {
+    $.getJSON( "https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/resources/noticias.json", function( data ) {
         $.each(data["noticias"], function( key, noticia){
             contadorDestacadas=0;
             contadorNoticias=0;
