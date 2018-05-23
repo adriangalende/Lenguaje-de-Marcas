@@ -1,4 +1,4 @@
-{"noticias":[{
+{"destacadas":[{
   "idNoticia": 1,
   "Fecha": "14/05/2018",
   "Titulo":"Qatar tienta a Andrés Iniesta",
@@ -16,17 +16,7 @@
     "Entradilla":"Según el diario qatarí Al Sharq, uno de los clubes más grandes de la Liga de Qatar habría hecho una atractivísima oferta al futbolista, que dará una respuesta en breve.",
     "Texto":"El destino de Andrés Iniesta puede dar un giro importante. Una vez que anunció que dejaba el Barcelona cuando acabara la presente temporada, al que le queda la última jornada de Liga este próximo fin de semana, empezó a especularse con que el futbolista de Fuentealbilla jugaría en China, en el Chongqing Dangdai Lifan. Después, tras un comunicado, el club chino, propiedad del Jiang Lizhang, dueño del Granada, aseguró que la relación con Iniesta iría más allá, e incluso subió su oferta para convencerle. Entonces se aseguró que iría a Japón. El caso es que a día de hoy se desconoce el destino post-Barça de Iniesta, que sigue sin desvelarlo, a pesar de las recurrentes preguntas de los medios de comunicación.",
     "Usuario":"La Liga",
-    "Destacada":false,
-    "Categoria":"Fútbol"
-  },
-  {
-    "idNoticia": 3,
-    "Fecha": "14/05/2018",
-    "Titulo":"Qatar tienta a Andrés Iniesta",
-    "Entradilla":"Según el diario qatarí Al Sharq, uno de los clubes más grandes de la Liga de Qatar habría hecho una atractivísima oferta al futbolista, que dará una respuesta en breve.",
-    "Texto":"El destino de Andrés Iniesta puede dar un giro importante. Una vez que anunció que dejaba el Barcelona cuando acabara la presente temporada, al que le queda la última jornada de Liga este próximo fin de semana, empezó a especularse con que el futbolista de Fuentealbilla jugaría en China, en el Chongqing Dangdai Lifan. Después, tras un comunicado, el club chino, propiedad del Jiang Lizhang, dueño del Granada, aseguró que la relación con Iniesta iría más allá, e incluso subió su oferta para convencerle. Entonces se aseguró que iría a Japón. El caso es que a día de hoy se desconoce el destino post-Barça de Iniesta, que sigue sin desvelarlo, a pesar de las recurrentes preguntas de los medios de comunicación.",
-    "Usuario":"Hossam Usama",
-    "Destacada":false,
+    "Destacada":true,
     "Categoria":"Fútbol"
   },
   {
@@ -39,14 +29,6 @@
     "Destacada":false,
     "Categoria":"Fútbol",
     "Tags":["Futbol","FC Barcelona", "Fichajes"]
-  },
-  {
-    "idNoticia": 5,
-    "Fecha": "14/05/2018",
-    "Titulo":"Qatar tienta a Andrés Iniesta",
-    "Entradilla":"Según el diario qatarí Al Sharq, uno de los clubes más grandes de la Liga de Qatar habría hecho una atractivísima oferta al futbolista, que dará una respuesta en breve.",
-    "Texto":"El destino de Andrés Iniesta puede dar un giro importante. Una vez que anunció que dejaba el Barcelona cuando acabara la presente temporada, al que le queda la última jornada de Liga este próximo fin de semana, empezó a especularse con que el futbolista de Fuentealbilla jugaría en China, en el Chongqing Dangdai Lifan. Después, tras un comunicado, el club chino, propiedad del Jiang Lizhang, dueño del Granada, aseguró que la relación con Iniesta iría más allá, e incluso subió su oferta para convencerle. Entonces se aseguró que iría a Japón. El caso es que a día de hoy se desconoce el destino post-Barça de Iniesta, que sigue sin desvelarlo, a pesar de las recurrentes preguntas de los medios de comunicación.",
-    "Usuario":"Hossam Usama",
-    "Destacada":false,
-    "Categoria":"Fútbol"
-  }]}
+  }
+
+]}

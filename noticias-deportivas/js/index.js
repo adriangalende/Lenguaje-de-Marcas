@@ -1,19 +1,37 @@
 $( document ).ready(function() {
     //Indice noticias destacadas
     i = 0;
+    //obteniendo noticias destacadas
     $.getJSON( "https://api.myjson.com/bins/11q3cy", function( data ) {
-        $.each(data["noticias"], function( key, noticia){
+        $.each(data["destacadas"], function( key, noticia){
             contadorDestacadas=0;
             contadorNoticias=0;
-
             if(noticia.Destacada){
                 $(".carousel-inner").append(pintarNoticiaDestacada(noticia, i));
                 $(".carousel-indicators").append("<li data-target='#carouselDestacadas' data-slide-to=''"+i+"'></li>")
                 contadorDestacadas++;
                 i++;
-            } else {
-                $(".row").append(pintarNoticia(noticia));
             }
+        });
+        $("#carouselDestacadas").before()
+
+    });
+
+    //Obteniendo noticias normales
+    $.getJSON( "https://api.myjson.com/bins/11q3cy", function( data ) {
+        $.each(data["noticias"], function( key, noticia){
+            contadorDestacadas=0;
+            contadorNoticias=0;
+
+            $(".row").append(pintarNoticia(noticia));
+            // if(noticia.Destacada){
+            //     $(".carousel-inner").append(pintarNoticiaDestacada(noticia, i));
+            //     $(".carousel-indicators").append("<li data-target='#carouselDestacadas' data-slide-to=''"+i+"'></li>")
+            //     contadorDestacadas++;
+            //     i++;
+            // } else {
+            //     $(".row").append(pintarNoticia(noticia));
+            // }
         });
         $("#carouselDestacadas").before()
 
@@ -68,7 +86,8 @@ $( document ).ready(function() {
             .done(function() {
                 // exists code
             }).fail(function() {
-            src= "img/noticias/default.jpg";
+                src= "img/noticias/default.jpg";
+                console.log("la imagen "+ $.md5(idNoticia)+".jpg no se ha encontrado, tendria que poner default")
         })
 
         return src
