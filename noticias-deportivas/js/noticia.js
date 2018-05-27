@@ -37,7 +37,6 @@ $( document ).ready(function() {
 
 
     if($.parametro("idnoticia") != null && $.parametro("idnoticia") != 0){
-        console.log("-"+$.parametro("idnoticia")+"-")
         tipoNoticia = $.parametro("idnoticia").slice(-1);
         if(tipoNoticia == "d" || tipoNoticia == "n" ){
             tratarNoticia($.parametro("idnoticia"))
