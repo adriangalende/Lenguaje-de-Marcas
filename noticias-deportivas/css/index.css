@@ -34,6 +34,10 @@ img.img-responsive{
     right: 0px;
 }
 
+.card-title{
+    cursor: pointer;
+}
+
 h3 span.badge-pill {
     font-size: 0.6em;
 }
@@ -47,12 +51,16 @@ h3 span.badge-pill {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)!important;
 }
 
-.mb-4:hover img {
+.mb-4:hover img  {
     cursor:pointer;
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -moz-transform: scale(0.99);
+    -webkit-transform: scale(0.99);
+    transform: scale(0.99);
     max-width: 100%;
+}
+
+.mb-4:hover span.badge-fijo  {
+    z-index: 1;
 }
 
 .mb-4 img {
@@ -60,6 +68,13 @@ h3 span.badge-pill {
     -webkit-transition: all 0.3s;
     transition: all .2s ease-in-out;
 
+}
+
+.badge-fijo{
+    z-index: 1;
+    position: absolute !important;
+    top: 5px !important;
+    left: 5px !important;
 }
 
 /* Cargando... */
