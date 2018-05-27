@@ -77,8 +77,6 @@ $( document ).ready(function() {
     //funcion al clicarel titulo de una noticia
     $('#noticias').on('click', 'h3.card-title', function() {
         var idNoticia = $(this).closest('article').attr('id').split("n")[0].trim();
-        noticiaSeleccionada = _.find(noticias["noticias"],function(noticia){ return noticia.idNoticia == idNoticia});
-        console.log(JSON.stringify(noticiaSeleccionada))
         //Reenvio a pagina noticia con parametro idnoticia (numero + n=normal / d=destacada)
         window.location.href = "noticia.html?idnoticia="+idNoticia+"n";
     });
