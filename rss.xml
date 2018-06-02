@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+    <channel>
+        <title>Noticias deportivas</title>
+        <link>https://adriangalende.github.io/Lenguaje-de-Marcas/noticias-deportivas/</link>
+        <description>Proyecto lenguaje de marcas - Adrian Galende</description>
+        <item>
+            <title>Qatar tienta a Andrés Iniesta</title>
+            <link>https://adriangalende.github.io/Lenguaje-de-Marcas/noticias-deportivas/noticia.html?idnoticia=1d</link>
+            <description>Según el diario qatarí Al Sharq, uno de los clubes más grandes de la Liga de Qatar habría hecho una atractivísima oferta al futbolista, que dará una respuesta en breve.</description>
+        </item>
+        <item>
+            <title>Yerry Mina en el 1-0: hace todo lo que no tiene que hacer un defensa</title>
+            <link>https://adriangalende.github.io/Lenguaje-de-Marcas/noticias-deportivas/noticia.html?idnoticia=2d</link>
+            <description>Según el diario qatarí Al Sharq, uno de los clubes más grandes de la Liga de Qatar habría hecho una atractivísima oferta al futbolista, que dará una respuesta en breve.</description>
+        </item>
+        <item>
+            <title>Qatar tienta a Andrés Iniesta</title>
+            <link>https://adriangalende.github.io/Lenguaje-de-Marcas/noticias-deportivas/noticia.html?idnoticia=4d</link>
+            <description>Según el diario qatarí Al Sharq, uno de los clubes más grandes de la Liga de Qatar habría hecho una atractivísima oferta al futbolista, que dará una respuesta en breve.</description>
+        </item>
+        <item>
+            <title>Tremendo accidente de Rabat: por los aires y su moto, en llamas</title>
+            <link>https://adriangalende.github.io/Lenguaje-de-Marcas/noticias-deportivas/noticia.html?idnoticia=10n</link>
+            <description>El catalán no perdió el conocimiento y fue trasladado al Hospital Quirón Dexeus. Pese a la aparatosidad no tiene fracturas y una resonancia determinará si hay daño en los ligamentos.</description>
+        </item>
+        <item>
+            <title>Viviani consigue su póquer en la previa de Prato Nevoso</title>
+            <link>https://adriangalende.github.io/Lenguaje-de-Marcas/noticias-deportivas/noticia.html?idnoticia=9n</link>
+            <description>El sprinter italiano ganó en Iseo su cuarta etapa en el Giro de Italia. Triunfo muy importante para afianzar la maglia ciclamino. No hubo cambios en la general.</description>
+        </item>
+        <item>
+            <title>"Griezmann: 1 de julio"</title>
+            <link>https://adriangalende.github.io/Lenguaje-de-Marcas/noticias-deportivas/noticia.html?idnoticia=8n</link>
+            <description>Bartomeu asegura quye hasta el 1 de julio no moverán ficha por Griezmann por respeto al Atlético de Madrid</description>
+        </item>
+       <item>
+            <title>Casemiro: "No puedo fichar por el Barça, no tengo el ADN Barça como dice Xavi"</title>
+            <link>https://adriangalende.github.io/Lenguaje-de-Marcas/noticias-deportivas/noticia.html?idnoticia=7n</link>
+            <description>El madridista respondió al exbarcelonista</description>
+        </item>
+       <item>
+            <title>Una Champions sin la bbC</title>
+            <link>https://adriangalende.github.io/Lenguaje-de-Marcas/noticias-deportivas/noticia.html?idnoticia=6n</link>
+            <description>SEl tridente no ha coincidido en la máxima competición continental en toda la temporada y solo han jugado juntos 416 minutos en Liga.</description>
+        </item>
+       <item>
+            <title>Una Champions sin la bbC</title>
+            <link>https://adriangalende.github.io/Lenguaje-de-Marcas/noticias-deportivas/noticia.html?idnoticia=6n</link>
+            <description>SEl tridente no ha coincidido en la máxima competición continental en toda la temporada y solo han jugado juntos 416 minutos en Liga.</description>
+        </item>
+
+    </channel>
+
+</rss>
