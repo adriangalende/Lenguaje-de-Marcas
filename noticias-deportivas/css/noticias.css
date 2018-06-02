@@ -1,0 +1,15 @@
+#imagenNoticia {
+    margin: 0 auto;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.breadcrumb{
+    position: relative;
+    top: 5px;
+    max-width: 100%;
+}

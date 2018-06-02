@@ -32,7 +32,7 @@ $( document ).ready(function() {
         var i=1
         proximaNoticia=contadorNoticias-1;
         while( i < contadorNoticias && i <= NOTICIAS_POR_PAGINA ){
-            $(".row").append(pintarNoticia(data["noticias"][proximaNoticia],(contadorNoticias-proximaNoticia)));
+            $(".rowNoticias").append(pintarNoticia(data["noticias"][proximaNoticia],(contadorNoticias-proximaNoticia)));
             i++;
             proximaNoticia--;
         }
@@ -93,23 +93,46 @@ $( document ).ready(function() {
         //al llegar al 80% de la altura de nuestra ventana
         setTimeout(function(){
             if(posicionScroll + alturavVentana == $(document).height() && proximaNoticia >=0 ) {
-                $('#loading').fadeIn();
-                setTimeout(function(){
-                var i=proximaNoticia;
-                var noticiaPintada=0;
-
-                    while ( proximaNoticia >= 0 && noticiaPintada < NOTICIAS_POR_PAGINA){
-                        $(".row").append(pintarNoticia(noticias["noticias"][i]));
-                        proximaNoticia--;
-                        i=proximaNoticia;
-                        noticiaPintada++;
-                    }
-
-                }, 1000); // timeout para cargar noticias
-                $('#loading').fadeOut();
+                cargarMasNoticias();
             }
         }, 400); //timeout para scroll general
     });
+
+    $("main").on("click","#cargarMas",function(){
+        cargarMasNoticias();
+    });
+
+    //funcion que carga más noticias ( scroll y botón )
+    function cargarMasNoticias(){
+        console.log(proximaNoticia)
+
+        $('#loading').fadeIn();
+        setTimeout(function(){
+            var i=proximaNoticia;
+            var noticiaPintada=0;
+
+            if(proximaNoticia < 0){
+                $('#loading').find("p").text("no hay más noticias para cargar");
+            } else {
+                $("#cargarMas").prop("disabled",false);
+                while ( proximaNoticia >= 0 && noticiaPintada < NOTICIAS_POR_PAGINA){
+                    $(".rowNoticias").append(pintarNoticia(noticias["noticias"][i]));
+                    proximaNoticia--;
+                    i=proximaNoticia;
+                    noticiaPintada++;
+                }
+                //Si la próxima noticia es menor que  significa que ya ha mostrado la ultima noticia
+                if(proximaNoticia < 0){
+                    $("#cargarMas").fadeOut();
+                }
+
+            }
+        }, 1000); // timeout para cargar noticias
+        $('#loading').fadeOut();
+        $("#cargarMas").prop("disabled",true);
+
+
+    }
 
     function pintarTags(tags){
         tagsHTML = ""
@@ -136,6 +159,17 @@ $( document ).ready(function() {
 
         return src;
     }
+    //FUNCION TESTEO RESPONSIVE
+    resized=false;
+    $(window).resize(function(e){
+       if($(this).width() <= 980 && resized==false){
+           $('.destacadas-header').closest('.col-8').removeClass('col-8').addClass('col-12');
+           resized=true;
+       } else if ($(this).width() > 980 && resized==true) {
+           $('.destacadas-header').closest('.col-12').removeClass('col-12').addClass('col-8');
+           resized=false;
+       }
+    });
 
 
 

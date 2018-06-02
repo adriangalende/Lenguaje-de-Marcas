@@ -1,7 +1,10 @@
 $( document ).ready(function() {
+    //endpoint imagenes
+    var ENDPOINTIMAGES="https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/img/noticias/";
     //metodo que obtiene el parametro que le solicitas, lo obtiene de la url
    const ENDPOINT_REDIRECCION = "index.html";
    var jsonNoticias;
+   var noticiaSeleccionada=""
 
     $.parametro = function(keyParametro){
         var results = new RegExp('[\?&]' + keyParametro + '=([^&#]*)').exec(window.location.href);
@@ -12,28 +15,6 @@ $( document ).ready(function() {
             return decodeURI(results[1]) || 0;
         }
     }
-
-    //Enviar noticia por ajax a spring
-    $.ajax({
-        url:"http://localhost/mapear",
-        type:"POST",
-        contentType: "application/json; charset=utf-8",
-        data: {"url":"https://as.com/motor/2018/05/27/formula_1/1527421587_847056.html"},
-        async: false,    //Cross-domain requests and dataType: "jsonp" requests do not support synchronous operation
-        cache: false,    //This will force requested pages not to be cached by the browser
-        processData:false,
-        beforeSend: function(xhr) {
-            xhr.setRequestHeader("Accept", "application/json");
-            xhr.setRequestHeader("Content-Type", "application/json");
-            xhr.setRequestHeader('Access-Control-Allow-Origin: *');
-            xhr.setRequestHeader('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
-            xhr.setRequestHeader('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
-        },
-        success: function(resposeJsonObject){
-            console.log(resposeJsonObject);
-            console.log("ok")
-        }
-    });
 
 
     if($.parametro("idnoticia") != null && $.parametro("idnoticia") != 0){
@@ -46,9 +27,6 @@ $( document ).ready(function() {
     } else {
         window.location.href = ENDPOINT_REDIRECCION;
     }
-
-
-
 
     function tratarNoticia(idNoticia){
         if($.parametro("idnoticia").slice(-1) == "d"){
@@ -68,16 +46,46 @@ $( document ).ready(function() {
 
     function pintarNoticia(idNoticia, jsonNoticias){
         noticiaSeleccionada = _.find(jsonNoticias["noticias"],function(noticia){ return noticia.idNoticia == idNoticia});
+
         if(existeNoticia(noticiaSeleccionada)){
-            return JSON.stringify(noticiaSeleccionada)
+            $("#noticia").html(noticeBuilder(noticiaSeleccionada));
         }
     }
 
     function pintarNoticiaDestacada(idNoticia, jsonNoticias){
         noticiaSeleccionada = _.find(jsonNoticias["destacadas"],function(noticia){ return noticia.idNoticia == idNoticia});
         if(existeNoticia(noticiaSeleccionada)){
-            return JSON.stringify(noticiaSeleccionada)
+            $("#noticia").html(noticeBuilder(noticiaSeleccionada));
         }
+    }
+
+    function noticeBuilder(noticiaSeleccionada){
+        //GENERO METATAGS OPENGRAPH Y TITULO
+        $(document).attr("title", noticiaSeleccionada.Titulo);
+        $("meta[property='og\\:title']").attr("content", noticiaSeleccionada.Titulo);
+        $("meta[property='og\\:type']").attr("content", "article:"+noticiaSeleccionada.Fecha);
+        $("meta[property='og\\:url']").attr("content", window.location.href);
+        $("meta[property='og\\:image']").attr("content", obtenerImagen(noticiaSeleccionada.idNoticia));
+        noticia = "";
+        noticia += "<img id=\"imagenNoticia\" class='img-responsive' src='"+obtenerImagen(noticiaSeleccionada.idNoticia)+"' alt=''/>";
+
+        if (noticiaSeleccionada.Tags != undefined ){
+            noticia +="<p id='tags'>Tags: ";
+            $(noticiaSeleccionada.Tags).each(function(i,tag){
+                noticia += "<span class='badge  badge-secondary'>"+tag+"</span>&nbsp;";
+            });
+            noticia +="</p>";
+        }
+        noticia += "<h2>" + noticiaSeleccionada.Titulo + "</h2>";
+        noticia += "<h5 class='text-muted'>" + noticiaSeleccionada.Entradilla + "</h5>";
+
+        alert(noticiaSeleccionada.Video);
+
+        noticia += "<p>" + noticiaSeleccionada.Texto + "</p>";
+
+        //agregamos el titulo de la noticia en el breadcrumb
+        $("#breadcrumbNoticia").text(noticiaSeleccionada.Titulo);
+        return noticia;
     }
 
     function existeNoticia(noticiaSeleccionada){
@@ -85,6 +93,23 @@ $( document ).ready(function() {
             window.location.href = ENDPOINT_REDIRECCION;
         }
         return true
+    }
+
+    function obtenerImagen(idNoticia) {
+        var src=""
+        $.ajax({
+            url: ENDPOINTIMAGES+$.md5(idNoticia)+".jpg",
+            type: 'GET',
+            async:false,
+            success: function(data) {
+                src=ENDPOINTIMAGES+$.md5(idNoticia)+".jpg";
+            },
+            error: function(data) {
+                src=ENDPOINTIMAGES+"default.jpg";
+            }
+        });
+
+        return src;
     }
 
 

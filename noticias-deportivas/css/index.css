@@ -4,6 +4,7 @@
 
 .destacadas-header {
     position:absolute;
+    top: 59px;
 }
 
 #carouselDestacadas.carousel.slide {
@@ -51,12 +52,38 @@ h3 span.badge-pill {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)!important;
 }
 
-.mb-4:hover img  {
+.mb-4:hover img, .carousel-caption h4:hover{
     cursor:pointer;
     -moz-transform: scale(0.99);
     -webkit-transform: scale(0.99);
     transform: scale(0.99);
     max-width: 100%;
+}
+
+.img-responsive:hover{
+    cursor:pointer;
+}
+
+#bannerPubli{
+    position: relative;
+    top: 97px;
+    background: url("../img/publicidad-vertical.png") no-repeat center;
+    background-size: contain;
+    line-height: 524px;
+    width: 100%;
+    height: 406px;
+}
+
+.rowPublicidadPeq{
+    background: url("../img/publicidad-horizontal.png") no-repeat center;
+    background-size: contain;
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.row{
+    margin-bottom: 10px;
 }
 
 .mb-4:hover span.badge-fijo  {
@@ -89,10 +116,41 @@ h3 span.badge-pill {
     text-align: center;
 }
 
+#cargarMas{
+    display: block;
+    margin: 0 auto;
+}
+
 /*FOOTER*/
 
 footer{
     background-color:red;
     margin-top: 20px;
     height: 400px;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .rowPublicidadPeq{display: block;}
+    #bannerPubli{display: none;}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .rowPublicidadPeq{display: block;}
+    #bannerPubli{display: none;}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .rowPublicidadPeq{display: none;}
+    #bannerPubli{display: block;}
+}
+
+/*  Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .rowPublicidadPeq{display: none;}
+    #bannerPubli{display: block;}
 }
