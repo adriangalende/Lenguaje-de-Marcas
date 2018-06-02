@@ -90,7 +90,7 @@ $( document ).ready(function() {
     }
 
     function pintarNoticia(noticia, indice){
-        stringNoticia = "<article id='"+noticia.idNoticia+"n' class='col-md-4'>";
+        stringNoticia = "<article id='"+noticia.idNoticia+"n' class='col-lg-4 col-md-6 col-sm-12'>";
         stringNoticia += "<div class=\"card mb-4\">"
         stringNoticia += "<div class=\"card-img-top\">"
         if(noticia.Video != undefined){
