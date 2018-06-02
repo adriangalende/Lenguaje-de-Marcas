@@ -85,6 +85,10 @@ $( document ).ready(function() {
         noticia += "<p>" + noticiaSeleccionada.Texto + "</p>";
 
         //agregamos el titulo de la noticia en el breadcrumb
+        $(".breadcrumb").append("<a class='breadcrumb-item' href='./index.html'> Inicio </a>")
+        categoria = noticiaSeleccionada.Categoria
+        $(".breadcrumb").append("<a class='breadcrumb-item' href='./categorias.html?categoria="+categoria+"'>"+categoria+"</a>")
+        $(".breadcrumb").append(" <span id=\"breadcrumbNoticia\" class=\"breadcrumb-item active\"></span>");
         $("#breadcrumbNoticia").text(noticiaSeleccionada.Titulo);
         return noticia;
     }

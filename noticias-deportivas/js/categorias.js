@@ -9,18 +9,22 @@ $( document ).ready(function() {
     var noticias;
     var contadorNoticias = 0;
 
-    //obteniendo noticias destacadas
-    $.getJSON( "https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/resources/destacadas.json", function( data ) {
-        var i=0;
-        $.each(data["destacadas"], function( key, noticia){
-            contadorDestacadas=0;
-            $(".carousel-inner").append(pintarNoticiaDestacada(noticia, i));
-            $(".carousel-indicators").append("<li data-target='#carouselDestacadas' data-slide-to=''"+i+"'></li>")
-            contadorDestacadas++;
-            i++;
-        });
 
-    });
+
+    $.parametro = function(keyParametro){
+        var results = new RegExp('[\?&]' + keyParametro + '=([^&#]*)').exec(window.location.href);
+        if (results==null){
+            return null;
+        }
+        else{
+            return decodeURI(results[1]) || 0;
+        }
+    }
+
+    var categoria = $.parametro("categoria");
+
+    $("#noticias").find("h5").text("Noticias de " + categoria)
+
 
     //Obteniendo noticias normales
     $.getJSON( "https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/resources/noticias.json", function( data ) {
@@ -37,42 +41,48 @@ $( document ).ready(function() {
         }
     });
 
-    function pintarNoticiaDestacada(noticia, i){
-        if(i==0){
-            stringNoticia = "<article id='"+noticia.idNoticia+"d' class='carousel-item active'>";
-        } else {
-            stringNoticia = "<article id='"+noticia.idNoticia+"d' class='carousel-item'>";
-        }
-        stringNoticia += "<h3><span class=\"badge badge-categoria\">"+noticia.Categoria+"</span></h3>"
-        stringNoticia += "<img class='img-responsive' src='"+obtenerImagen(noticia.idNoticia)+"' alt=''/>";
 
-        stringNoticia += "<div class='carousel-caption'>";
-        stringNoticia +=   pintarTags(noticia.Tags);
-        stringNoticia += "<h4>" + noticia.Titulo + "</h4>";
-        stringNoticia += "</div>"
-        stringNoticia += "</article>"
-        return stringNoticia;
+    //funcion al clicar el titulo de una noticia
+    $('#noticias').on('click', 'h3.card-title', function() {
+        var idNoticia = $(this).closest('article').attr('id').split("n")[0].trim();
+        //Reenvio a pagina noticia con parametro idnoticia (numero + n=normal / d=destacada)
+        window.location.href = "noticia.html?idnoticia="+idNoticia+"n";
+    });
+
+
+    var categorias = ["Fútbol","Motociclismo","Ciclismo"];
+    if(categoria != null){
+        if($.inArray(categoria,categorias) != -1){
+
+        } else {
+            window.location.href = ENDPOINT_REDIRECCION;
+        }
+    } else {
+        window.location.href = ENDPOINT_REDIRECCION;
     }
 
+
     function pintarNoticia(noticia, indice){
-        stringNoticia = "<article id='"+noticia.idNoticia+"n' class='col-lg-4 col-md-6 col-sm-12'>";
-        stringNoticia += "<div class=\"card mb-4\">"
-        stringNoticia += "<div class=\"card-img-top\">"
-        if(noticia.Video != undefined){
-            stringNoticia += "<i class=\"fab fa-youtube tieneVideo\"></i>";
-        }
-        stringNoticia += "<span class='badge badge-danger badge-fijo'>"+noticia.Categoria+"</span>"+"<img class=\"img-fluid\" src='"+obtenerImagen(noticia.idNoticia)+"' alt=\"\">"
-        //$("#"+noticia.idNoticia+"normal").find(".card-img-top").css('background-image',obtenerImagen(noticia.idNoticia))
-        stringNoticia += "</div>"
-        stringNoticia += "<div class=\"card-body p-2\">"
-        stringNoticia += "<p class=\"card-text center\">"+pintarTags(noticia.Tags)+"</p>"
-        stringNoticia += "<h3 class='card-title'>" + noticia.Titulo + "</h3>";
-        stringNoticia += "<p>" + noticia.Entradilla + "</p>";
-        stringNoticia += "<small class=\\\"text-muted\\\">   <i class='fa fa-user'></i>  "+noticia.Usuario+", "+noticia.Fecha+"</small></p>"
-        stringNoticia += "</div>"
-        stringNoticia += "</div>"
-        stringNoticia += "</article>"
-        return stringNoticia;
+            if(noticia.Categoria == categoria){
+                stringNoticia = "<article id='"+noticia.idNoticia+"' class='col-12'>";
+                stringNoticia += "<div class=\"card mb-4\">"
+                stringNoticia += "<div class=\"card-img-top\">"
+                if(noticia.Video != undefined){
+                    stringNoticia += "<i class=\"fab fa-youtube tieneVideo\"></i>";
+                }
+                stringNoticia += "<img class=\"img-fluid\" src='"+obtenerImagen(noticia.idNoticia)+"' alt=\"\">"
+                //$("#"+noticia.idNoticia+"normal").find(".card-img-top").css('background-image',obtenerImagen(noticia.idNoticia))
+                stringNoticia += "</div>"
+                stringNoticia += "<div class=\"card-body p-2\">"
+                stringNoticia += "<p class=\"card-text center\">"+pintarTags(noticia.Tags)+"</p>"
+                stringNoticia += "<h3 class='card-title'>" + noticia.Titulo + "</h3>";
+                stringNoticia += "<p>" + noticia.Entradilla + "</p>";
+                stringNoticia += "<small class=\\\"text-muted\\\">   <i class='fa fa-user'></i>  "+noticia.Usuario+", "+noticia.Fecha+"</small></p>"
+                stringNoticia += "</div>"
+                stringNoticia += "</div>"
+                stringNoticia += "</article>"
+                return stringNoticia;
+            }
     }
 
     //funcion al clicarel titulo de una noticia
@@ -80,11 +90,6 @@ $( document ).ready(function() {
         var idNoticia = $(this).closest('article').attr('id').split("n")[0].trim();
         //Reenvio a pagina noticia con parametro idnoticia (numero + n=normal / d=destacada)
         window.location.href = "noticia.html?idnoticia="+idNoticia+"n";
-    });
-
-    $('#carouselDestacadas').on('click', '.carousel-caption h4', function() {
-        var idNoticia = $(this).closest('article').attr('id').split("d")[0].trim();
-        window.location.href = "noticia.html?idnoticia="+idNoticia+"d";
     });
 
     //funcion controlar scroll para cargar noticias
@@ -163,13 +168,13 @@ $( document ).ready(function() {
     //FUNCION TESTEO RESPONSIVE
     resized=false;
     $(window).resize(function(e){
-       if($(this).width() <= 980 && resized==false){
-           $('.destacadas-header').closest('.col-8').removeClass('col-8').addClass('col-12');
-           resized=true;
-       } else if ($(this).width() > 980 && resized==true) {
-           $('.destacadas-header').closest('.col-12').removeClass('col-12').addClass('col-8');
-           resized=false;
-       }
+        if($(this).width() <= 980 && resized==false){
+            $('.destacadas-header').closest('.col-8').removeClass('col-8').addClass('col-12');
+            resized=true;
+        } else if ($(this).width() > 980 && resized==true) {
+            $('.destacadas-header').closest('.col-12').removeClass('col-12').addClass('col-8');
+            resized=false;
+        }
     });
 
 
