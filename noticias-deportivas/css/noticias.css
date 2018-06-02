@@ -1,8 +1,24 @@
-#imagenNoticia {
-    margin: 0 auto;
-    width: 100%;
+body{
+    font-size: 1em;
 }
 
+.container{
+    border-left: 1px solid #736f6f1a;
+    border-right: 1px solid #736f6f1a;
+}
+
+#imagenNoticia {
+    margin: 0 auto;
+    width: 100% !important;
+}
+
+.rowPublicidadPeq{
+    background: url("../img/publicidad-horizontal.png") no-repeat center;
+    background-size: contain;
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+}
 h2 {
     text-align: center;
     font-size: 3em;
@@ -12,4 +28,109 @@ h2 {
     position: relative;
     top: 5px;
     max-width: 100%;
+    background-color: transparent;
+}
+
+.videoNoticia{
+    margin: 0 auto;
+    max-width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*NAV*/
+
+.title-small {
+    font-size: 1em;
+    background-color: #ffba00;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 91px;
+    padding: 5px;
+    line-height: 10px;
+    height: 20px;
+}
+
+
+.title-small a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.title-small a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cardCategoria {
+    width: 200px;
+    padding: 3px;
+    margin-bottom: 11px;
+    margin-left: 16px;
+}
+
+.mega-menu{
+    width: 680px !important;
+    max-width: 680px!important;
+    background-color: #21252954;
+}
+
+
+.center {
+    position: relative;
+    display: block;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    top: 42px;
+    margin-bottom: 55px;
+}
+ul.rs-list {
+    display: inline-block;
+    width: 900px;
+    margin: 0;
+    list-style: none;
+}
+ul.rs-list > li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #eae6e6;
+    margin: 0px 32px;
+    transform: rotate(45deg);
+    text-align: center;
+    transition: all 0.7s;
+}
+ul.rs-list > li:hover {
+    border-radius: 50%;
+    transform: rotate(405deg);
+    cursor: pointer;
+}
+ul.rs-list > li > i {
+    line-height: 50px;
+    color: white;
+    font-size: 30px;
+    transform: rotate(-45deg);
+    transition: all 0.7s;
+    width: 50px;
+}
+ul.rs-list > li:hover > i {
+    transform: rotate(-405deg);
+}
+
+ul.rs-list > li[class*=google]:hover {
+    background-color: #dd4b39;
+}
+ul.rs-list > li[class*=facebook]:hover {
+    background-color: #3b5998;
+}
+ul.rs-list > li[class*=twitter]:hover {
+    background-color: #55acee;
+}
+ul.rs-list > li[class*=instagram]:hover {
+    background-color: #e95950;
+}
+ul.rs-list > li[class*=pinterest]:hover {
+    background-color: #cb2027;
 }

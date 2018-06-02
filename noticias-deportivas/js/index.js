@@ -12,15 +12,14 @@ $( document ).ready(function() {
     //obteniendo noticias destacadas
     $.getJSON( "https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/resources/destacadas.json", function( data ) {
         var i=0;
+        //generarCategoriasNav(data["destacadas"])
         $.each(data["destacadas"], function( key, noticia){
             contadorDestacadas=0;
             $(".carousel-inner").append(pintarNoticiaDestacada(noticia, i));
             $(".carousel-indicators").append("<li data-target='#carouselDestacadas' data-slide-to=''"+i+"'></li>")
             contadorDestacadas++;
             i++;
-
         });
-        $("#carouselDestacadas").before()
 
     });
 
@@ -29,6 +28,8 @@ $( document ).ready(function() {
         contadorNoticias = (Object.keys(data["noticias"]).length);
         //asignamos a la variable global noticias los objetos json
         noticias=data;
+        //generamos las categorias disponibles en el menu
+        generarCategoriasNav(data["noticias"])
         var i=1
         proximaNoticia=contadorNoticias-1;
         while( i < contadorNoticias && i <= NOTICIAS_POR_PAGINA ){
@@ -37,6 +38,40 @@ $( document ).ready(function() {
             proximaNoticia--;
         }
     });
+
+    //Obteniendo categorias para menu
+    categorias = []
+    function generarCategoriasNav(noticias){
+        $( noticias ).each(function( index,noticia ) {
+            if($.inArray(noticia.Categoria, categorias) == -1){
+                categorias.push(noticia.Categoria)
+            }
+        });
+        pintarCategoriasNav(categorias);
+    }
+
+
+    function pintarCategoriasNav(categorias){
+        $('.mega-menu').append("<div class=\"row categoriasNav\">")
+        $( categorias ).each(function( index,categoria ) {
+            $('.categoriasNav').append("<div class=\"col col"+categoria+"\">")
+            $(".col"+categoria).append("<a class='linkCat"+categoria+"' href=\"#\">")
+            $(".linkCat"+categoria).append("<div class=\"card cardCategoria card"+categoria+"\">")
+            $(".card"+categoria).append("<img class=\"img-fluid\" src=\"./img/"+categoria+".jpg\" alt=\"\">")
+            $(".card"+categoria).append("<div class=\"card-img-overlay card-img-overlay"+categoria+"\">")
+            $(".card-img-overlay"+categoria).append("<h2 class=\"title-small\">"+categoria+"</h2>")
+            $(".card"+categoria).append("</div>")
+            $(".linkCat"+categoria).append("</div>")
+            $(".col"+categoria).append("</a>")
+            $('.categoriasNav').append("</div>")
+
+        });
+        $('.mega-menu').append("</div>")
+    }
+
+
+
+
 
     function pintarNoticiaDestacada(noticia, i){
         if(i==0){
@@ -59,7 +94,9 @@ $( document ).ready(function() {
         stringNoticia = "<article id='"+noticia.idNoticia+"n' class='col-md-4'>";
         stringNoticia += "<div class=\"card mb-4\">"
         stringNoticia += "<div class=\"card-img-top\">"
-
+        if(noticia.Video != undefined){
+            stringNoticia += "<i class=\"fab fa-youtube tieneVideo\"></i>";
+        }
         stringNoticia += "<span class='badge badge-danger badge-fijo'>"+noticia.Categoria+"</span>"+"<img class=\"img-fluid\" src='"+obtenerImagen(noticia.idNoticia)+"' alt=\"\">"
         //$("#"+noticia.idNoticia+"normal").find(".card-img-top").css('background-image',obtenerImagen(noticia.idNoticia))
         stringNoticia += "</div>"

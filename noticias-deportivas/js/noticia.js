@@ -49,6 +49,9 @@ $( document ).ready(function() {
 
         if(existeNoticia(noticiaSeleccionada)){
             $("#noticia").html(noticeBuilder(noticiaSeleccionada));
+            if(noticiaSeleccionada.Video != undefined){
+                $('.text-muted').append("<div class='embed-responsive embed-responsive-16by9 videoNoticia'><iframe class='embed-responsive-item' src='"+noticiaSeleccionada.Video+"'></iframe></div>")
+            }
         }
     }
 
@@ -78,12 +81,6 @@ $( document ).ready(function() {
         }
         noticia += "<h2>" + noticiaSeleccionada.Titulo + "</h2>";
         noticia += "<h5 class='text-muted'>" + noticiaSeleccionada.Entradilla + "</h5>";
-
-        if (noticiaSeleccionada.Video != undefined){
-            noticia += "<div class=\"embed-responsive embed-responsive-16by9\">";
-            noticia +=   "  <iframe class=\"embed-responsive-item\" src=\""+noticiaSeleccionada.Video+" allowfullscreen></iframe>";
-            noticia +=    "</div>";
-        }
 
         noticia += "<p>" + noticiaSeleccionada.Texto + "</p>";
 
@@ -116,5 +113,9 @@ $( document ).ready(function() {
         return src;
     }
 
+
+    $("#share").jsSocials({
+        shares: ["twitter", "facebook", "linkedin"]
+    });
 
 });
