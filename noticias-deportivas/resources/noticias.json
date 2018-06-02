@@ -100,7 +100,7 @@
     "Usuario":"Rafa Payá Blog",
     "Destacada":false,
     "Categoria":"Motociclismo",
-    "Video": "https://www.youtube.com/watch?v=wo17MyDLL8E",
+    "Video": "https://www.youtube.com/embed/wo17MyDLL8E?autoplay=1",
     "Tags":["MOTOGP","Montmeló"]
   }
 ]}

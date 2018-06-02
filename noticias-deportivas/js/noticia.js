@@ -79,7 +79,11 @@ $( document ).ready(function() {
         noticia += "<h2>" + noticiaSeleccionada.Titulo + "</h2>";
         noticia += "<h5 class='text-muted'>" + noticiaSeleccionada.Entradilla + "</h5>";
 
-        alert(noticiaSeleccionada.Video);
+        if (noticiaSeleccionada.Video != undefined){
+            noticia += "<div class=\"embed-responsive embed-responsive-16by9\">";
+            noticia +=   "  <iframe class=\"embed-responsive-item\" src=\""+noticiaSeleccionada.Video+" allowfullscreen></iframe>";
+            noticia +=    "</div>";
+        }
 
         noticia += "<p>" + noticiaSeleccionada.Texto + "</p>";
 
