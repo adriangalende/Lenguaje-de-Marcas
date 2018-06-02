@@ -12,7 +12,6 @@ $( document ).ready(function() {
     //obteniendo noticias destacadas
     $.getJSON( "https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/resources/destacadas.json", function( data ) {
         var i=0;
-        //generarCategoriasNav(data["destacadas"])
         $.each(data["destacadas"], function( key, noticia){
             contadorDestacadas=0;
             $(".carousel-inner").append(pintarNoticiaDestacada(noticia, i));
