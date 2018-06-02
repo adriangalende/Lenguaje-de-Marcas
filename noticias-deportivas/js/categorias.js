@@ -1,6 +1,7 @@
 $( document ).ready(function() {
     //endpoint imagenes
     var ENDPOINTIMAGES="https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/img/noticias/";
+    var ENDPOINT_REDIRECCION="./index.html"
     //Indice noticias destacadas
     var NOTICIAS_POR_PAGINA = 3;
     //Indicador de cual es la proxima noticia a mostrar
@@ -17,6 +18,16 @@ $( document ).ready(function() {
             return null;
         }
         else{
+            var categorias = ["Fútbol","Motociclismo","Ciclismo"];
+            if(decodeURI(results[1]) != null || decodeURI(results[1]) != 0 ){
+                if($.inArray(decodeURI(results[1]),categorias) != -1){
+                    return decodeURI(results[1]) || 0;
+                } else {
+                    window.location.href = ENDPOINT_REDIRECCION;
+                }
+            } else {
+                window.location.href = ENDPOINT_REDIRECCION;
+            }
             return decodeURI(results[1]) || 0;
         }
     }
@@ -50,16 +61,6 @@ $( document ).ready(function() {
     });
 
 
-    var categorias = ["Fútbol","Motociclismo","Ciclismo"];
-    if(categoria != null){
-        if($.inArray(categoria,categorias) != -1){
-
-        } else {
-            window.location.href = ENDPOINT_REDIRECCION;
-        }
-    } else {
-        window.location.href = ENDPOINT_REDIRECCION;
-    }
 
 
     function pintarNoticia(noticia, indice){
