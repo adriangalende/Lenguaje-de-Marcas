@@ -2,13 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Noticias deportivas - añadir noticia</title>
+    <title>Noticias deportivas - editar noticia</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <!-- Font Awesome icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
     <link rel="stylesheet" href="./css/index.css">
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -24,7 +23,7 @@
             crossorigin="anonymous"></script>
     <script src="./js/jquery.md5.js"></script>
     <script src="./js/nav.js"></script>
-    <script src="./js/nuevaNoticia.js"></script>
+    <script src="./js/editarNoticia.js"></script>
 </head>
 <body>
 <header>
@@ -37,6 +36,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="dashboard.html"><i class="badge badge-pill badge-danger">beta</i> Dashboard</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="nuevaNoticia.html"><i class="badge badge-pill badge-danger">beta</i> Nueva noticia</a>
+            </li>
             <li class="nav-item dropdown mega-dropdown py-0 show">
                 <a class="nav-link dropdown-toggle" href="#" id="cards1" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Categorias</a>
                 <div class="dropdown-menu mega-menu show" aria-labelledby="cards1">
@@ -48,19 +50,8 @@
 </header>
 
 <main class="container">
-    <h3>Añadir noticia</h3>
-    <form id="formUrl" action="">
-        <div class="form-group form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" type="checkbox"> noticia de fuente externa ( por ahora solo funciona con as.com)
-            </label>
-        </div>
-        <div class="form-group">
-            <input type="input" class="form-control" id="urlNoticia">
-            <p id="label-url" class="alert alert-danger alert-dismissible fade show"> De momento solo podemos agregar noticias de as.com</p>
-        </div>
-    </form>
-    <form id="addNoticia" action="">
+    <h3>Editar noticia</h3>
+    <form id="formEditar" action="">
         <div class="form-group ">
             <label class="control-label requiredField" for="titulo">
                 Titulo
@@ -77,7 +68,7 @@
         *
        </span>
             </label>
-            <input class="form-control" id="categoria" name="categoria" placeholder="Categoria de la noticia" type="text"/>
+            <input class="form-control" id="categoria" name="categoria" placeholder="categoria de la noticia" type="text"/>
         </div>
         <div class="form-group ">
             <label class="control-label requiredField" for="entradilla">
@@ -96,13 +87,33 @@
         </div>
         <div class="form-group ">
             <label class="control-label " for="tags">
-               Tags
+                Tags
             </label>
             <input class="form-control" id="tags" name="tags" type="text"/>
         </div>
-        <button id="anadirNoticia" type="button" class="btn btn-primary">Añadir noticia</button>
+        <button id="btn-editarNoticia" type="button" class="btn btn-primary">Editar noticia</button>
+        <button id="btn-borrarNoticia" type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalCancelar">Borrar noticia</button>
         <span id="labelNoticia" class="alert"></span>
     </form>
+    <div id="modalCancelar" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Borrar noticia</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger">borrar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 <footer class="navbar navbar-default bg-dark navbar-dark navbar-fixed-bottom">
     <p class="navbar-text pull-left">© 2018 - Noticias deportivas, Proyecto Lenguaje de Marcas</p>

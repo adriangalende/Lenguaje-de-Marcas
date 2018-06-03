@@ -19,7 +19,12 @@ $( document ).ready(function() {
 
     if($.parametro("idnoticia") != null && $.parametro("idnoticia") != 0){
         tipoNoticia = $.parametro("idnoticia").slice(-1);
-        if(tipoNoticia == "d" || tipoNoticia == "n" ){
+
+        //tipos de noticias
+        //n= normal
+        //d=destacada
+        //b=base de datos
+        if(tipoNoticia == "d" || tipoNoticia == "n" || tipoNoticia == "b" ){
             tratarNoticia($.parametro("idnoticia"))
         } else {
             window.location.href = ENDPOINT_REDIRECCION;
@@ -34,12 +39,34 @@ $( document ).ready(function() {
                 jsonNoticias=data;
                 $("main").append(pintarNoticiaDestacada(idNoticia.split("d")[0], jsonNoticias));
             });
-        } else {
+        } else if ($.parametro("idnoticia").slice(-1) == "n") {
             $.getJSON( "https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/resources/noticias.json", function( data ) {
                 jsonNoticias = data;
                 $("main").append(pintarNoticia(idNoticia.split("n")[0], jsonNoticias));
             });
 
+        } else {
+            $.post( "http://localhost:8080/cargarNoticia",idNoticia.split("b")[0], function(data) {
+                if(data != "" || data != null) {
+                    //Convertimos a objeto noticia porque el json muestra las keys distintas
+                    var noticia = new Object();
+                    noticia.idNoticia = data.idNoticia;
+                    noticia.Titulo = data.titulo;
+                    noticia.Categoria=data.categoria;
+                    noticia.Fecha=data.fecha;
+                    noticia.Entradilla=data.entradilla;
+                    noticia.Texto=data.texto;
+                    tags = []
+                    $.each(data.tags, function( key, tag){
+                        tags.push(tag.split('"')[1]);
+                    });
+                    noticia.Tags=tags;
+                    noticia.Usuario=data.usuario;
+                    $("#noticia").html(noticeBuilder(noticia));
+                } else {
+                    window.location="./index.html"
+                }
+            });
         }
     }
 
@@ -54,6 +81,8 @@ $( document ).ready(function() {
             }
         }
     }
+
+
 
     function pintarNoticiaDestacada(idNoticia, jsonNoticias){
         noticiaSeleccionada = _.find(jsonNoticias["destacadas"],function(noticia){ return noticia.idNoticia == idNoticia});
