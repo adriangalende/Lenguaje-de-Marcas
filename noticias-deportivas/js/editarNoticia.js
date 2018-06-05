@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     var noticiaObtenida;
+    var ENDPOINT="http://bbddproject-bbddproject.a3c1.starter-us-west-1.openshiftapps.com"
 
     $.parametro = function(keyParametro){
         var results = new RegExp('[\?&]' + keyParametro + '=([^&#]*)').exec(window.location.href);
@@ -12,7 +13,7 @@ $( document ).ready(function() {
     }
 
 
-    $.post( "http://localhost:8080/cargarNoticia",$.parametro("idnoticia"), function(data) {
+    $.post(ENDPOINT+"/cargarNoticia",$.parametro("idnoticia"), function(data) {
         if(data != ""){
             noticiaObtenida = data;
             $("#titulo").val(data.titulo);
@@ -59,7 +60,7 @@ $( document ).ready(function() {
         noticia.Categoria = $("#categoria").val();
         console.log(JSON.stringify(noticia))
 
-        $.post( "http://localhost:8080/editarNoticia", JSON.stringify(noticia), function(data) {
+        $.post( ENDPOINT+"/editarNoticia", JSON.stringify(noticia), function(data) {
             if(data){
                 $("#labelNoticia").addClass("alert-success").removeClass("label-info").text("La noticia se ha actualizado con éxito!").fadeIn();
                 setTimeout(function(){
@@ -90,7 +91,7 @@ $( document ).ready(function() {
     });
 
     function eliminarNoticia(idNoticia){
-        $.post( "http://localhost:8080/eliminarNoticia",idNoticia, function(data) {
+        $.post( ENDPOINT+"/eliminarNoticia",idNoticia, function(data) {
             window.location="./dashboard.html";
         })
     }

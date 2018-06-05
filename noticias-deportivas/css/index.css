@@ -248,6 +248,11 @@ ul.rs-list > li[class*=pinterest]:hover {
 
 /* MEDIA QUERIES */
 
+@media (min-width: 200px) {
+    .rowPublicidadPeq{display: block;}
+    #bannerPubli{display: none;}
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .rowPublicidadPeq{display: block;}

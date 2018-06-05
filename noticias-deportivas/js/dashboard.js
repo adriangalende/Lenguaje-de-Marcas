@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
-
-    $.post( "http://localhost:8080/cargarNoticias","all", function(data) {
+    var ENDPOINT="http://bbddproject-bbddproject.a3c1.starter-us-west-1.openshiftapps.com"
+    $.post( ENDPOINT+"/cargarNoticias","all", function(data) {
         console.log(data)
         $.each(data, function( key, noticia){
             $("tbody").append("<tr>");
@@ -54,7 +54,7 @@ $( document ).ready(function() {
     }
 
     function eliminarNoticia(idNoticia){
-        $.post( "http://localhost:8080/eliminarNoticia",idNoticia, function(data) {
+        $.post( ENDPOINT+"/eliminarNoticia",idNoticia, function(data) {
             window.location="./dashboard.html";
         })
     }

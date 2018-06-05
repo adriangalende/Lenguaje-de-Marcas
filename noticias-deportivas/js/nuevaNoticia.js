@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+    var ENDPOINT="http://bbddproject-bbddproject.a3c1.starter-us-west-1.openshiftapps.com";
+
     $("#urlNoticia").closest("div").hide();
     $('#label-url').hide()
     $("#anadirNoticia").attr('disabled',true)
@@ -15,7 +17,7 @@ $( document ).ready(function() {
     $('#formUrl').on('change', '#urlNoticia', function() {
         console.log(getHostname($(this).val()) == "as.com")
         if(getHostname($(this).val()) == "as.com"){
-            $.post( "http://localhost:8080/mapear", $(this).val().toString(), function(data) {
+            $.post( ENDPOINT+"/mapear", $(this).val().toString(), function(data) {
                 console.log(data)
                 $("#titulo").val(data.titulo);
                 $("#entradilla").val(data.entradilla)
@@ -64,7 +66,7 @@ $( document ).ready(function() {
         noticia.Tags= $("#tags").val().split(",");
         console.log(JSON.stringify(noticia))
 
-        $.post( "http://localhost:8080/insertaNoticia", JSON.stringify(noticia), function(data) {
+        $.post( ENDPOINT+"/insertaNoticia", JSON.stringify(noticia), function(data) {
             if(data == "ok"){
                 $("#formUrl").trigger("reset");
                 $("#addNoticia").trigger("reset");
