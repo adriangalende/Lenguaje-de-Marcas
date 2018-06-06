@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    var ENDPOINT="http://bbddproject-bbddproject.a3c1.starter-us-west-1.openshiftapps.com";
+    var ENDPOINT="https://bbddproject-bbddproject.a3c1.starter-us-west-1.openshiftapps.com";
 
     $("#urlNoticia").closest("div").hide();
     $('#label-url').hide()

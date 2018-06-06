@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     //endpoint imagenes
     var ENDPOINTIMAGES="https://raw.githubusercontent.com/adriangalende/Lenguaje-de-Marcas/master/noticias-deportivas/img/noticias/";
-    var ENDPOINT="http://bbddproject-bbddproject.a3c1.starter-us-west-1.openshiftapps.com";
+    var ENDPOINT="https://bbddproject-bbddproject.a3c1.starter-us-west-1.openshiftapps.com";
     //metodo que obtiene el parametro que le solicitas, lo obtiene de la url
    const ENDPOINT_REDIRECCION = "index.html";
    var jsonNoticias;
