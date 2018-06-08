@@ -37,6 +37,8 @@ $( document ).ready(function() {
     $('#addNoticia').change(function(){
         if(isFilled($("#texto").val()) && isFilled($("#tags").val()) && isFilled($("#titulo").val())){
             $("#anadirNoticia").attr("disabled", false).fadeIn();
+        } else {
+            $("#anadirNoticia").attr("disabled", true).fadeIn();
         }
 
     });
